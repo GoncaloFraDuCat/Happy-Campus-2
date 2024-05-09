@@ -72,6 +72,37 @@ header {
   width: 100%;
 }
 
+.intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 12%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.intro img{
+  max-height: 40%;
+  max-width: 40%;
+  border-radius: 50%;
+}
+
+.texto-intro {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 0;
+  font-style: italic;
+  font-size: x-large;
+}
+
 .sobre-text {
   padding-top: 2%;
   padding-bottom: 2%;
@@ -81,7 +112,7 @@ header {
   line-height: 1.5;
   margin: 0;
   max-width: 33%;
-  margin-top: 18%;
+  margin-top: 5%;
 }
 
 .plano-de-acao{
@@ -152,4 +183,169 @@ header {
   margin-top: 10px; /* Adds space above the image */
   border-radius: 50%;
   max-width: 270px;
+}
+
+.atividades {
+    position: relative;
+    margin:1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.atividades-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  gap: 10px; /* Creates space between items */
+  width: 70%;
+}
+
+
+.atividades-card-1 {
+  height: 600px;;
+  color: rgb(255, 255, 255);
+  background-color: black; /* Example background color */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Optional: Add shadow for depth */
+  opacity: 0; /* Start with cards invisible */
+  transform: translateY(100%); /* Start above the viewport */
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Smooth transition for the transform and opacity properties */
+  animation: slideIn 1s forwards; /* Apply the animation */
+  flex: 0 0 40%; /* Adjusted to ensure each card takes up half the width */
+  margin: 5px;
+  border-radius: 7%;
+  display: flex; /* Make.servicos-card-1 a flex container */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center children horizontally */
+  align-items: center;
+  border-style: double;
+  border-color: #3c0000;
+}
+
+.atividades-card-1 img {
+  max-width: 66%;
+  border-radius: 7%;
+}
+
+.atividades-card-1 p {
+  max-width: 60%;
+  border-radius: 7%;
+  line-height: 1.5; /* Adjusts the line spacing */
+}
+
+.atividades-descrption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.atividades-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+.servicos {
+  position: relative;
+  margin:5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.servicos-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  gap: 10px; /* Creates space between items */
+  width: 70%;
+}
+
+.servicos-card-1 {
+  height: 600px;;
+  color: rgb(255, 255, 255);
+  background-color: black; /* Example background color */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Optional: Add shadow for depth */
+  opacity: 0; /* Start with cards invisible */
+  transform: translateY(100%); /* Start above the viewport */
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Smooth transition for the transform and opacity properties */
+  animation: slideIn 1s forwards; /* Apply the animation */
+  flex: 0 0 40%; /* Adjusted to ensure each card takes up half the width */
+  margin: 5px;
+  border-radius: 7%;
+  display: flex; /* Make.servicos-card-1 a flex container */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center children horizontally */
+  align-items: center;
+  border-style: double;
+  border-color: #3c0000;
+}
+
+.servicos-card-1 img {
+  max-width: 77%;
+  border-radius: 7%;
+}
+
+.servicos-card-1 p {
+  max-width: 80%;
+  border-radius: 7%;
+  line-height: 1.5; /* Adjusts the line spacing */
+
+}
+
+.servicos-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 0;
+
+}
+
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.parceria {
+  display: flex;
+  justify-content: center; /* Centers the images horizontally */
+  padding: 20px; /* Adds padding around the images */
+  border-style: solid; /* Use 'solid' for a visible border */
+  border-width: 1px 0; /* 1px border on top and bottom, no border on left and right */
+  border-color: brown; /* Sets the border color to brown */
+  gap: 110px;
+  margin-right: 21px;
+}
+
+.parceria img {
+  width: 200px; /* Sets the width of the images */
+  height: 166px; /* Sets the height of the images */
+  object-fit: contain; /* Ensures the images cover the area without distorting their aspect ratio */
 }
