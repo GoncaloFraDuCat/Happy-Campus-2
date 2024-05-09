@@ -1,0 +1,155 @@
+/* style.css */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: black;
+  color: white;
+}
+
+header {
+  background-color: #333;
+  color: white;
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 1%;
+    margin: 0;
+    overflow: hidden;
+    position: fixed; /* Fix the navbar at the top */
+    top: 0; /* Align it to the top of the viewport */
+    width: 100%; /* Ensure it spans the full width */
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: black;
+  }
+
+
+.navbar li {
+  float: left;
+  margin-right: 10px;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #111;
+}
+
+.page-contents {
+  margin-top: 0;
+}
+
+.banner-wrapper {
+  margin-top: 80px; /* Adjust this value based on the actual height of your navbar */
+}
+
+#banner {
+  background-image: url('student-mental_63942274.png');
+  background-size: cover; /* Changed from 'contain' to 'cover' for better scaling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; /* Adjust text color as needed */
+  z-index: 999;
+}
+
+#banner img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+}
+
+.sobre-text {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 33%;
+  margin-top: 18%;
+}
+
+.plano-de-acao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.plano-de-acao img {
+  max-width: 100%; /* Ensures images do not exceed their container */
+  height: 350px; /* Maintains aspect ratio */
+  margin: 10px 0; /* Adds space above and below each image */
+  border-radius: 5%;
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-between; /* Spreads the images evenly across the container */
+  gap: 5px;
+  width: 80%;
+}
+
+
+.equipa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.equipa-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 80%;
+}
+
+.equipa-card-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgba(24, 124, 8, 0.1); /* Adjust the border color as needed */
+  padding: 20px; /* Add some padding inside the card */
+  margin: 10px; /* Add some margin between cards */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 5%;
+  width: 27%;
+}
+
+.equipa-card-1 img {
+  max-width: 100%; /* Ensures images do not exceed their container */
+  height: 150px; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  margin-top: 10px; /* Adds space above the image */
+  border-radius: 50%;
+  max-width: 270px;
+}
