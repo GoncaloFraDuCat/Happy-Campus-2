@@ -18,7 +18,7 @@ header {
 
 .navbar {
     list-style-type: none;
-    padding: 1%;
+    padding: 2%;
     margin: 0;
     overflow: hidden;
     position: fixed; /* Fix the navbar at the top */
@@ -26,6 +26,8 @@ header {
     width: 100%; /* Ensure it spans the full width */
     z-index: 1000; /* Ensure it's above other content */
     background-color: black;
+    border-bottom-style: groove;
+    border-color: darkslategrey;
   }
 
 
@@ -70,13 +72,14 @@ header {
   max-width: 100%;
   max-height: 100%;
   width: 100%;
+  padding-top: 120px;
 }
 
 .intro {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 12%;
+  padding-top: 28%;
   padding-bottom: 2%;
   padding-left: 5%;
   padding-right: 5%;
@@ -91,6 +94,15 @@ header {
   border-radius: 50%;
 }
 
+.sobre-card {
+  display: flex;
+  margin-top: 12%;
+  margin-bottom: 4%;
+  background-color: darkslategray;
+}
+.sobre-card img {
+  max-width: 57%;
+}
 .texto-intro {
   padding-top: 2%;
   padding-bottom: 2%;
@@ -104,7 +116,7 @@ header {
 }
 
 .sobre-text {
-  padding-top: 2%;
+  padding-top: 3%;
   padding-bottom: 2%;
   padding-left: 5%;
   padding-right: 5%;
@@ -112,7 +124,19 @@ header {
   line-height: 1.5;
   margin: 0;
   max-width: 33%;
-  margin-top: 5%;
+}
+
+.sobre-text h2 {
+  padding-bottom: 10%;
+  font-size: xxx-large;
+}
+
+.sobre-p{
+  padding-top: 5%;
+  line-height: 1.5;
+}
+.hands {
+  height: 723px;
 }
 
 .plano-de-acao{
@@ -126,6 +150,7 @@ header {
   text-align: justify;
   line-height: 1.5;
   margin: 0;
+  background-color: dark-green;
 }
 
 .plano-de-acao img {
@@ -148,7 +173,7 @@ header {
   flex-direction: column;
   align-items: center;
   padding-top: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 10%;
   padding-left: 5%;
   padding-right: 5%;
   text-align: justify;
@@ -158,22 +183,32 @@ header {
 
 .equipa-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center the cards horizontally */
+  flex-wrap: wrap; /* Allows the cards to wrap onto new lines if there isn't enough space */
   gap: 10px;
-  width: 80%;
+  width: 80%; /* Adjusted to ensure the container takes up a specific percentage of the viewport width */
+  margin: auto; /* Centers the container horizontally */
 }
 
 .equipa-card-1 {
-  display: flex;
+  display: flex; /* Make.servicos-card-1 a flex container */
+  flex: 0 0 calc(20% - 20px); /* Each card takes up approximately one-fifth of the container width minus the gap */
+  max-width: calc(20% - 20px);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 3px solid rgba(24, 124, 8, 0.1); /* Adjust the border color as needed */
+
   padding: 20px; /* Add some padding inside the card */
   margin: 10px; /* Add some margin between cards */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   border-radius: 5%;
-  width: 27%;
+  width: 27%; /* Adjusted to fit within the container */
+}
+
+.equipa-card-1 p {
+  text-align: center; /* Centers the text horizontally */
+  line-height: 1.5; /* Adjusts the line spacing */
+
 }
 
 .equipa-card-1 img {
@@ -183,54 +218,100 @@ header {
   margin-top: 10px; /* Adds space above the image */
   border-radius: 50%;
   max-width: 270px;
+  justify-content: center;
 }
 
-.atividades {
-    position: relative;
-    margin:1%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 .atividades-cards {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  overflow: hidden;
-  gap: 10px; /* Creates space between items */
-  width: 70%;
+  flex-direction: column;
+  overflow-y: auto; /* Enables vertical scrolling */
+  gap: 10px;
+  width: 100%;
+  overscroll-behavior: contain;
+  padding-top: 3%;
+  margin-left: 5%;
+  line-height: 1.5;
+
 }
 
+.atividades-card-1-text {
+  flex: 0 0 auto; /* Prevents the text from shrinking */
+  padding: 2% 5%; /* Adjust padding as needed */
+  text-align: justify;
+  line-height: 1.5;
+  margin: 0;
+  /* Ensure it's not part of the flex container that scrolls */
+  position: sticky; /* Keeps the text in place */
+  left: 0; /* Aligns the text to the left */
+  width: 37%;
+  overscroll-behavior: contain; /* Prevents scrolling from propagating to the parent */
+
+}
+
+.atividades-card-container {
+  display: flex; /* Make the container a flex container */
+  flex-direction: row; /* Align children horizontally */
+  overflow-y: scroll; /* Enables vertical scrolling */
+  overflow-x: hidden; /* Hides horizontal overflow */
+  gap: 10px; /* Creates space between items */
+  /* Ensure the container itself does not shrink */
+  flex: 0 0 auto;
+  width: 100%;
+  max-height: 800px;
+
+  background-color: darkslategrey;
+}
 
 .atividades-card-1 {
-  height: 600px;;
+  flex: 0 0 auto; /* Prevents the cards from shrinking */
+  height: 600px;
   color: rgb(255, 255, 255);
-  background-color: black; /* Example background color */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Optional: Add shadow for depth */
-  opacity: 0; /* Start with cards invisible */
-  transform: translateY(100%); /* Start above the viewport */
-  transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Smooth transition for the transform and opacity properties */
-  animation: slideIn 1s forwards; /* Apply the animation */
-  flex: 0 0 40%; /* Adjusted to ensure each card takes up half the width */
-  margin: 5px;
-  border-radius: 7%;
-  display: flex; /* Make.servicos-card-1 a flex container */
-  flex-direction: column; /* Stack children vertically */
-  justify-content: center; /* Center children horizontally */
+  background-color: black;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  animation: slideIn 1s forwards;
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  border-style: double;
-  border-color: #3c0000;
+  max-width: 75%;
+  list-style-type: none;
+  line-height: 1.5;
+  border-radius: 5%;
+  border-style: solid;
+  border-color: darkgray;
+  padding-bottom: 10%;
+  margin-bottom: 10%;
+}
+
+.atividades-card-1 li {
+  text-align: center;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.atividades-card-1 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 .atividades-card-1 img {
-  max-width: 66%;
-  border-radius: 7%;
+  max-width: 100%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 
 .atividades-card-1 p {
   max-width: 60%;
-  border-radius: 7%;
   line-height: 1.5; /* Adjusts the line spacing */
+  font-size: x-large;
 }
 
 .atividades-descrption {
@@ -246,6 +327,12 @@ header {
   margin: 0;
 }
 
+.atividades-descrption img {
+  width: 99%;
+  padding-top: 8%;
+  margin-top:1%
+}
+
 .atividades-title {
   display: flex;
   justify-content: center;
@@ -256,6 +343,36 @@ header {
   text-align: justify;
   line-height: 1.5;
   margin: 0;
+}
+
+/* For Webkit browsers (Chrome, Safari, Opera) */
+.atividades-card-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+.atividades-card-container {
+  scrollbar-width: none;
+}
+
+/* For IE and Edge */
+.atividades-card-container {
+  -ms-overflow-style: none;
+}
+
+/* For Webkit browsers (Chrome, Safari, Opera) */
+.atividades-cards::-webkit-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+.atividades-cards {
+  scrollbar-width: none;
+}
+
+/* For IE and Edge */
+.atividades-cards {
+  -ms-overflow-style: none;
 }
 
 
@@ -348,4 +465,60 @@ header {
   width: 200px; /* Sets the width of the images */
   height: 166px; /* Sets the height of the images */
   object-fit: contain; /* Ensures the images cover the area without distorting their aspect ratio */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER FOR LAST */
+
+
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-top: 2px solid darkslategrey;
+}
+
+.footer.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.footer.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer.col {
+  text-align: left;
+}
+
+.footer h5 {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: white;
+  cursor: pointer;
 }
