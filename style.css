@@ -75,11 +75,30 @@ header {
   padding-top: 120px;
 }
 
+.parceria {
+  display: flex;
+  justify-content: center; /* Centers the images horizontally */
+  padding: 20px; /* Adds padding around the images */
+  border-style: solid; /* Use 'solid' for a visible border */
+  border-width: 1px 0; /* 1px border on top and bottom, no border on left and right */
+  border-color: brown; /* Sets the border color to brown */
+  gap: 110px;
+  margin-right: 21px;
+  margin-top: 22%;
+  margin-bottom: 5%;
+}
+
+.parceria img {
+  width: 200px; /* Sets the width of the images */
+  height: 166px; /* Sets the height of the images */
+  object-fit: contain; /* Ensures the images cover the area without distorting their aspect ratio */
+}
+
 .intro {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 28%;
+  padding-top: 10%;
   padding-bottom: 2%;
   padding-left: 5%;
   padding-right: 5%;
@@ -129,6 +148,7 @@ header {
 .sobre-text h2 {
   padding-bottom: 10%;
   font-size: xxx-large;
+  text-align: center;
 }
 
 .sobre-p{
@@ -284,7 +304,7 @@ header {
   border-style: solid;
   border-color: darkgray;
   padding-bottom: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
 }
 
 .atividades-card-1 li {
@@ -343,6 +363,7 @@ header {
   text-align: justify;
   line-height: 1.5;
   margin: 0;
+  font-size: xxx-large;
 }
 
 /* For Webkit browsers (Chrome, Safari, Opera) */
@@ -378,7 +399,7 @@ header {
 
 .servicos {
   position: relative;
-  margin:5%;
+  margin-top: 10%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -387,7 +408,7 @@ header {
 .servicos-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   overflow: hidden;
   gap: 10px; /* Creates space between items */
   width: 70%;
@@ -402,7 +423,7 @@ header {
   transform: translateY(100%); /* Start above the viewport */
   transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Smooth transition for the transform and opacity properties */
   animation: slideIn 1s forwards; /* Apply the animation */
-  flex: 0 0 40%; /* Adjusted to ensure each card takes up half the width */
+  flex: 0 0 calc(33.33% - 20px); /* Each card takes up approximately one-third of the container width minus the gap */
   margin: 5px;
   border-radius: 7%;
   display: flex; /* Make.servicos-card-1 a flex container */
@@ -411,11 +432,16 @@ header {
   align-items: center;
   border-style: double;
   border-color: #3c0000;
+
+  max-width: calc(33.33% - 20px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
 }
 
 .servicos-card-1 img {
   max-width: 77%;
   border-radius: 7%;
+  min-width: 50%;
 }
 
 .servicos-card-1 p {
@@ -450,22 +476,6 @@ header {
   }
 }
 
-.parceria {
-  display: flex;
-  justify-content: center; /* Centers the images horizontally */
-  padding: 20px; /* Adds padding around the images */
-  border-style: solid; /* Use 'solid' for a visible border */
-  border-width: 1px 0; /* 1px border on top and bottom, no border on left and right */
-  border-color: brown; /* Sets the border color to brown */
-  gap: 110px;
-  margin-right: 21px;
-}
-
-.parceria img {
-  width: 200px; /* Sets the width of the images */
-  height: 166px; /* Sets the height of the images */
-  object-fit: contain; /* Ensures the images cover the area without distorting their aspect ratio */
-}
 
 
 
