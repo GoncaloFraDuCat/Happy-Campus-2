@@ -60,7 +60,6 @@ header {
   background-image: url('student-mental_63942274.png');
   background-size: cover; /* Changed from 'contain' to 'cover' for better scaling */
   display: flex;
-  justify-content: center;
   align-items: center;
   text-align: center;
   color: white; /* Adjust text color as needed */
@@ -102,7 +101,6 @@ header {
   padding-bottom: 2%;
   padding-left: 5%;
   padding-right: 5%;
-  text-align: justify;
   line-height: 1.5;
   margin: 0;
 }
@@ -127,7 +125,6 @@ header {
   padding-bottom: 2%;
   padding-left: 5%;
   padding-right: 5%;
-  text-align: justify;
   line-height: 1.5;
   margin: 0;
   font-style: italic;
@@ -138,9 +135,7 @@ header {
   padding-top: 3%;
   padding-bottom: 2%;
   padding-left: 5%;
-  padding-right: 5%;
-  text-align: justify;
-  line-height: 1.5;
+  padding-right: 5%;  line-height: 1.5;
   margin: 0;
   max-width: 33%;
 }
@@ -167,7 +162,6 @@ header {
   padding-bottom: 2%;
   padding-left: 5%;
   padding-right: 5%;
-  text-align: justify;
   line-height: 1.5;
   margin: 0;
   background-color: dark-green;
@@ -177,13 +171,13 @@ header {
   max-width: 100%; /* Ensures images do not exceed their container */
   height: 350px; /* Maintains aspect ratio */
   margin: 10px 0; /* Adds space above and below each image */
-  border-radius: 5%;
+  border-radius: 130px;
 }
 
 .img-container {
   display: flex;
   justify-content: space-between; /* Spreads the images evenly across the container */
-  gap: 5px;
+  gap: 40px;
   width: 80%;
 }
 
@@ -196,33 +190,27 @@ header {
   padding-bottom: 10%;
   padding-left: 5%;
   padding-right: 5%;
-  text-align: justify;
   line-height: 1.5;
   margin: 0;
 }
 
 .equipa-cards {
   display: flex;
-  justify-content: center; /* Center the cards horizontally */
   flex-wrap: wrap; /* Allows the cards to wrap onto new lines if there isn't enough space */
-  gap: 10px;
-  width: 80%; /* Adjusted to ensure the container takes up a specific percentage of the viewport width */
   margin: auto; /* Centers the container horizontally */
 }
 
 .equipa-card-1 {
-  display: flex; /* Make.servicos-card-1 a flex container */
+  display: flex;
   flex: 0 0 calc(20% - 20px); /* Each card takes up approximately one-fifth of the container width minus the gap */
   max-width: calc(20% - 20px);
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 
-  padding: 20px; /* Add some padding inside the card */
   margin: 10px; /* Add some margin between cards */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  border-radius: 5%;
-  width: 27%; /* Adjusted to fit within the container */
+  border-radius: 20px;
+  width: 37%; /* Adjusted to fit within the container */
 }
 
 .equipa-card-1 p {
@@ -238,7 +226,7 @@ header {
   margin-top: 10px; /* Adds space above the image */
   border-radius: 50%;
   max-width: 270px;
-  justify-content: center;
+
 }
 
 .atividades-cards {
@@ -257,10 +245,8 @@ header {
 .atividades-card-1-text {
   flex: 0 0 auto; /* Prevents the text from shrinking */
   padding: 2% 5%; /* Adjust padding as needed */
-  text-align: justify;
   line-height: 1.5;
   margin: 0;
-  /* Ensure it's not part of the flex container that scrolls */
   position: sticky; /* Keeps the text in place */
   left: 0; /* Aligns the text to the left */
   width: 37%;
@@ -295,12 +281,11 @@ header {
   flex: 0 0 40%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   max-width: 75%;
   list-style-type: none;
   line-height: 1.5;
-  border-radius: 5%;
+  border-radius: 20px;
   border-style: solid;
   border-color: darkgray;
   padding-bottom: 10%;
@@ -324,8 +309,8 @@ header {
 
 .atividades-card-1 img {
   max-width: 100%;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .atividades-card-1 p {
@@ -398,10 +383,8 @@ header {
 
 
 .servicos {
-  position: relative;
   margin-top: 10%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -415,7 +398,7 @@ header {
 }
 
 .servicos-card-1 {
-  height: 600px;;
+  height: auto;
   color: rgb(255, 255, 255);
   background-color: black; /* Example background color */
   box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Optional: Add shadow for depth */
@@ -425,28 +408,42 @@ header {
   animation: slideIn 1s forwards; /* Apply the animation */
   flex: 0 0 calc(33.33% - 20px); /* Each card takes up approximately one-third of the container width minus the gap */
   margin: 5px;
-  border-radius: 7%;
+  border-radius: 20px;
   display: flex; /* Make.servicos-card-1 a flex container */
   flex-direction: column; /* Stack children vertically */
-  justify-content: center; /* Center children horizontally */
-  align-items: center;
   border-style: double;
   border-color: #3c0000;
-
   max-width: calc(33.33% - 20px);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 
 }
 
+.more-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.more-button:hover {
+  background-color: #0056b3;
+}
+
 .servicos-card-1 img {
-  max-width: 77%;
-  border-radius: 7%;
-  min-width: 50%;
+  max-width: 100%;
+  min-width: 250px;
+  min-height: 180px;
+  max-height: 185px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .servicos-card-1 p {
   max-width: 80%;
-  border-radius: 7%;
+  border-radius: 20px;
   line-height: 1.5; /* Adjusts the line spacing */
 
 }
@@ -455,13 +452,18 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 2%;
+  padding-top: 5%;
   padding-left: 5%;
   padding-right: 5%;
   text-align: justify;
   line-height: 1.5;
   margin: 0;
+  font-size: xxx-large;
+}
 
+.servicos-description {
+  padding-top: 5%;
+  flex-grow: 1;
 }
 
 
@@ -478,7 +480,72 @@ header {
 
 
 
+.noticias {
+  position: relative;
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.noticias-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+  gap: 10px; /* Creates space between items */
+  width: 70%;
+}
+
+.noticias-card-1 {
+  height: 600px;;
+  color: rgb(255, 255, 255);
+  background-color: black; /* Example background color */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Optional: Add shadow for depth */
+  opacity: 0; /* Start with cards invisible */
+  transform: translateY(100%); /* Start above the viewport */
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Smooth transition for the transform and opacity properties */
+  animation: slideIn 1s forwards; /* Apply the animation */
+  flex: 0 0 calc(33.33% - 20px); /* Each card takes up approximately one-third of the container width minus the gap */
+  margin: 5px;
+  border-radius: 20px;
+  display: flex; /* Make.servicos-card-1 a flex container */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center;
+  border-style: double;
+  border-color: #3c0000;
+  max-width: calc(33.33% - 20px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+}
+
+.noticias-card-1 img {
+  max-width: 255px;
+  border-radius: 20px;
+  min-width: 250px;
+  min-height: 180px;
+  max-height: 185px;
+}
+
+.noticias-card-1 p {
+  max-width: 80%;
+  border-radius: 20px;
+  line-height: 1.5; /* Adjusts the line spacing */
+
+}
+
+.noticias-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 0;
+
+}
 
 
 

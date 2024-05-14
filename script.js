@@ -42,3 +42,17 @@ document.addEventListener('DOMContentLoaded', function() {
   // Initial check in case any cards are already in view
   checkVisibility();
 });
+
+// New functionality: Expand second <p> within.servicos-card-1 upon clicking "More"
+document.querySelectorAll('.more-button').forEach(button => {
+  button.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default action
+    const description = this.closest('.servicos-card-1'); // Correctly target the parent div
+    const descriptionText = description.querySelector('.servicos-description'); // Target the description text
+    if (descriptionText.style.maxHeight) {
+      descriptionText.style.maxHeight = null;
+    } else {
+      descriptionText.style.maxHeight = descriptionText.scrollHeight + "px";
+    }
+  });
+});
