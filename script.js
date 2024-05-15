@@ -56,3 +56,35 @@ document.querySelectorAll('.more-button').forEach(button => {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const carousel = document.querySelector('.servicos');
+  const prevButton = document.querySelector('.carousel-control.prev');
+  const nextButton = document.querySelector('.carousel-control.next');
+
+  let scrollPerClick;
+  let currentScrollPosition = 0;
+
+  // Calculate the amount to scroll per click based on the width of one card
+  scrollPerClick = carousel.offsetWidth / 3;
+
+  prevButton.addEventListener('click', function () {
+    if (currentScrollPosition > 0) {
+      currentScrollPosition -= scrollPerClick;
+      carousel.scrollTo({
+        left: currentScrollPosition,
+        behavior: 'smooth'
+      });
+    }
+  });
+
+  nextButton.addEventListener('click', function () {
+    if (currentScrollPosition < carousel.scrollWidth - carousel.offsetWidth) {
+      currentScrollPosition += scrollPerClick;
+      carousel.scrollTo({
+        left: currentScrollPosition,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
