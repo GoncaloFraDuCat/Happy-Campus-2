@@ -1,51 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Navbar Example</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
 
-<body>
-  <nav>
-    <ul class="navbar">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#atividades">Atividades</a></li>
-      <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#noticias">Notícias</a></li>
-    </ul>
-  </nav>
+  <body>
+  <section id="home"></section>
+  <div class="header">
+
+      <nav>
+        <img src="images/navbar-logo.png" alt="Logo" class="navbar-logo">
 
 
 
-<section id="home"></section>
+        <ul class="navbar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#atividades">Atividades</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#noticias">Notícias</a></li>
+        </ul>
+      </nav>
 
 
-<div class="banner-wrapper">
-  <div id="banner">
-    <img src="images/student-mental_63942274.png" alt="Student Mental Health">
-  </div>
-</div>
 
-<div class="parceria">
-  <img src="images/isec-logo.png" alt="Isec Logo">
-  <img src="images/Istec-logo.jpg" alt="Istec Logo">
-  <img src="images/dges-logo.png" alt="Dges Logo">
-</div>
+    </div>
+    <div class="banner-wrapper">
+      <div id="banner">
+        <img src="images/student-banner.jpg" alt="Student Mental Health">
+      </div>
+    </div>
 
-<div class="intro">
+    <div class="banner-text">
+      <div class="banner-text-1">
+      <h1> Saúde Mental </h1>
+      <p> A Nossa Missão </p>
+      </div>
+      <div class="banner-text-2">
+      <h1> Atividades & Serviços </h1>
+      <p> O Nosso Plano </p>
+      </div>
+      <div class="banner-text-3">
+      <h1> Tens Perguntas </h1>
+      <p> Contacta-nos para qualquer dúvida :) </p>
+      </div>
+    </div>
+
+
+
+
+
+  <div class="intro">
     <h1 class=" texto-intro">   "Os dados disponíveis sugerem que os problemas de saúde mental afetam milhões de jovens em toda a Europa todos os anos.
       A entrada no ensino superior acarreta para muitos jovens o primeiro afastamento continuado do meio familiar,
       aliado não raras vezes a dificuldades económicas acrescidas,
       dificuldades de alojamento, e a necessária capacidade de adaptação a meios sociais desconhecidos são so alguns dos fatores que contribuem para esta pandemia."
     </h1>
     <img src="images/studen-dep.jpeg" alt="Student Mental Health">
-</div>
+  </div>
 
+  <div class="parceria">
+    <img src="images/isec-logo.png" alt="Isec Logo">
+    <img src="images/Istec-logo.jpg" alt="Istec Logo">
+    <img src="images/dges-logo.png" alt="Dges Logo">
+  </div>
 
 <div class='page-contents'>
     <section id="sobre">
@@ -68,6 +91,7 @@
 
       </div>
 
+       <!--
 
       <div class='plano-de-acao'>
           <h2> Plano de Ação Happy Campus </h2>
@@ -84,66 +108,68 @@
 
       </div>
 
+      -->
+
       <div class='equipa'>
-        <h2> Conheça a Nossa Equipa </h2>
+        <h1> Conheça a Nossa Equipa </h1>
         <div class='equipa-cards'>
 
           <div class='equipa-card-1'>
             <img src="images/marco-ferreira.jpg" alt="Marco-Ferreira">
-            <p> Marco Maia Ferreira </p>
+            <p class="equipa-name"> Marco Maia Ferreira </p>
             <p> Investigador e Coordenador Físico </p>
           </div>
 
           <div class='equipa-card-1'>
             <img src="images/patricia_pacheco.png" alt="Patricia Pacheco">
-            <p> Patrícia de Barros Pacheco </p>
+            <p class="equipa-name"> Patrícia de Barros Pacheco </p>
             <p> Investigadora e Co-Coordenadora Científica </p>
           </div>
 
           <div class='equipa-card-1'>
             <img src="images/carlos-cabeleira.jpeg" alt="Carlos Cabeleira">
-            <p> Carlos Cabeleira </p>
+            <p class="equipa-name"> Carlos Cabeleira </p>
             <p> Gestor do Projeto </p>
           </div>
 
           <div class='equipa-card-1'>
             <img src="images/ana_maria_med.png" alt="Ana Medeiros">
-            <p> Ana Maria Medeiros </p>
+            <p class="equipa-name"> Ana Maria Medeiros </p>
             <p> Coordenadora do Gabinete de Apoio Psicológico </p>
           </div>
 
           <div class='equipa-card-1'>
             <img src="images/sandrina_esteves.jpg" alt="Sandrina Esteves">
-            <p> Sandrina da Silva Esteves </p>
+            <p class="equipa-name"> Sandrina da Silva Esteves </p>
             <p>  Equipa PAPEI </p>
           </div>
 
           <div class='equipa-card-1'>
             <img src="images/rui_fonseca.JPG" alt="Rui Fonseca">
-            <p> Rui Brito Fonseca </p>
+            <p class="equipa-name"> Rui Brito Fonseca </p>
             <p> Investigador </p>
           </div>
 
           <div class='equipa-card-1'>
             <img src="images/bruno_antunes.jpeg" alt="Bruno Antunes">
-            <p> Bruno Antunes </p>
+            <p class="equipa-name"> Bruno Antunes </p>
             <p> Levantamento, Gestão e Tratamento de Dados </p>
           </div>
 
           <div class='equipa-card-1'>
             <img src="images/ana_parames.jpg" alt="Ana Paramés">
-            <p> Ana Paramés Gil </p>
+            <p class="equipa-name"> Ana Paramés Gil </p>
             <p> Responsável pela dinamização das atividades de Voluntariado e de Responsabilidade Ambiental </p>
           </div>
           <div class='equipa-card-1'>
             <img src="images/fabiana_costa.jpg" alt="Fabiana Costa">
-            <p> Fabiana Costa </p>
+            <p class="equipa-name"> Fabiana Costa </p>
             <p> Responsável pela dinamização das atividades Culturais da componente Bem Estar </p>
           </div>
 
           <div class='equipa-card-1'>
             <img src="images/tania_carraquico.jpg" alt="Tania Carraquico">
-            <p> Tânia Carraquico </p>
+            <p class="equipa-name"> Tânia Carraquico </p>
             <p> Complience e Monitorização do Projeto </p>
           </div>
 
