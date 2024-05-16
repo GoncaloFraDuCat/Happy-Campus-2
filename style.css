@@ -69,7 +69,7 @@ header {
 
 
 .page-contents {
-
+  background-color: #EDB88B;
 }
 
 .banner-wrapper {
@@ -294,7 +294,6 @@ header {
   border-color: #2E282A;
 }
 
-}
 
 .atividades-cards {
   display: flex;
@@ -332,14 +331,14 @@ header {
   width: 100%;
   max-height: 800px;
 
-  background-color: darkslategrey;
+  background-color: #2E282A;
 }
 
 .atividades-card-1 {
   flex: 0 0 auto; /* Prevents the cards from shrinking */
   height: 600px;
   color: rgb(255, 255, 255);
-  background-color: black;
+  background-color: #CD5334;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   opacity: 0;
   transform: translateY(100%);
@@ -481,6 +480,9 @@ header {
   right: 10px;
 }
 
+#servicos {
+  margin-left: 2%;
+}
 .servicos {
   position: relative;
   overflow: hidden;
@@ -502,31 +504,26 @@ header {
   display: flex;
   gap: 66px; /* Creates space between items */
   width: 62%;
-  padding-left: 5%;
   margin-bottom: 30px;
 }
 
 .servicos-card-1 {
-  height: 98%;
+  height: 600px;
   color: darkseagreen;
   background-color: black; /* Example background color */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Optional: Add shadow for depth */
   opacity: 0; /* Start with cards invisible */
   transform: translateY(100%); /* Start above the viewport */
   transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Smooth transition for the transform and opacity properties */
   animation: slideIn 1s forwards; /* Apply the animation */
-  flex: 0 0 calc(22 - 20px); /* Each card takes up approximately one-third of the container width minus the gap */
   margin: 10px;
   border-radius: 20px;
   display: flex; /* Make.servicos-card-1 a flex container */
   flex-direction: column; /* Stack children vertically */
   border-style: double;
   border-color: #3c0000;
-  max-width: calc(33.33% - 20px); /* Adjust based on how many cards you want to show */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   flex-shrink: 0;
   scroll-snap-align: start;
-  width: calc(100% / 3); /* Adjust based on how many cards you want to show */
+  width: 345px; /* Adjust based on how many cards you want to show */
   box-sizing: border-box;
 }
 
@@ -601,10 +598,11 @@ header {
 
 .noticias {
   position: relative;
-  margin-top: 5%;
+  margin-top: 3%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 5%;
 }
 
 .noticias-cards {
@@ -617,16 +615,13 @@ header {
 }
 
 .noticias-card-1 {
-  height: 600px;;
-  color: rgb(255, 255, 255);
-  background-color: black; /* Example background color */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Optional: Add shadow for depth */
+  color: darkseagreen;
+  background-color: #2E282A; /* Example background color */
   opacity: 0; /* Start with cards invisible */
   transform: translateY(100%); /* Start above the viewport */
   transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Smooth transition for the transform and opacity properties */
   animation: slideIn 1s forwards; /* Apply the animation */
   flex: 0 0 calc(33.33% - 20px); /* Each card takes up approximately one-third of the container width minus the gap */
-  margin: 5px;
   border-radius: 20px;
   display: flex; /* Make.servicos-card-1 a flex container */
   flex-direction: column; /* Stack children vertically */
@@ -639,11 +634,12 @@ header {
 }
 
 .noticias-card-1 img {
-  max-width: 255px;
-  border-radius: 20px;
-  min-width: 250px;
+  max-width: 100%;
+  min-width: 100%;
   min-height: 180px;
   max-height: 185px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 
 .noticias-card-1 p {
@@ -664,10 +660,6 @@ header {
   line-height: 1.5;
   margin: 0;
   font-size: xxx-large;
-}
-
-#noticias {
-  margin-top: 5%;
 }
 
 
