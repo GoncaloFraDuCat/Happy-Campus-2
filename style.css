@@ -351,7 +351,7 @@ header {
   line-height: 1.5;
   border-radius: 20px;
   border-style: solid;
-  border-color: darkgray;
+  border-color: black;
   padding-bottom: 10%;
   margin-bottom: 15%;
 }
@@ -508,8 +508,7 @@ header {
 
 .servicos-card-1 {
   height: 250px;
-  color: white;
-  background-color:#8D3B72; /* Example background color */
+  background-color:antiquewhite; /* Example background color */
   opacity: 0; /* Start with cards invisible */
   transform: translateY(100%); /* Start above the viewport */
   transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Smooth transition for the transform and opacity properties */
@@ -518,7 +517,7 @@ header {
   border-radius: 20px;
   display: flex; /* Make.servicos-card-1 a flex container */
   flex-direction: row; /* Stack children vertically */
-  border-style: double;
+  border-style: solid;
   border-color: #3c0000;
   flex-shrink: 0;
   scroll-snap-align: start;
@@ -548,6 +547,8 @@ header {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   object-fit: cover;
+  border-right: solid;
+  border-color: bla;
 }
 
 .servicos-card-1 p {
@@ -615,39 +616,38 @@ header {
 }
 
 .noticias-card-1 {
-  color: white;
-  background-color: #8D3B72; /* Example background color */
+  color: black;
   opacity: 0; /* Start with cards invisible */
   transform: translateY(100%); /* Start above the viewport */
   transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Smooth transition for the transform and opacity properties */
   animation: slideIn 1s forwards; /* Apply the animation */
-  flex: 0 0 calc(33.33% - 20px); /* Each card takes up approximately one-third of the container width minus the gap */
   border-radius: 20px;
   display: flex; /* Make.servicos-card-1 a flex container */
   flex-direction: column; /* Stack children vertically */
   align-items: center;
-  border-style: double;
-  border-color: #3c0000;
-  max-width: calc(33.33% - 20px);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 250px;
 
 }
 
 .noticias-card-1 img {
   max-width: 100%;
-  min-width: 100%;
+  min-width: 98%;
   min-height: 180px;
   max-height: 185px;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #8D3B72;
 }
 
 .noticias-card-1 p {
-  max-width: 80%;
+  max-width: 100%;
   border-radius: 20px;
   line-height: 1.5; /* Adjusts the line spacing */
+  place-self: flex-start;
+  margin: 10px;
 
 }
+
 
 .noticias-title{
   display: flex;
@@ -662,6 +662,10 @@ header {
   font-size: xxx-large;
 }
 
+.noticia-date
+{
+font-size: xx-large;
+}
 
 
 
