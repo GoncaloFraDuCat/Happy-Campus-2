@@ -88,3 +88,27 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+document.querySelectorAll('a[href^="#"]:not([href="promocao.html"])').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    // Get the target element
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+
+    // Check if targetElement is not null
+    if (targetElement!== null) { // Add this condition
+      const navbarHeight = document.querySelector('.navbar')? document.querySelector('.navbar').offsetHeight : 0;
+      const scrollPosition = targetElement.offsetTop - navbarHeight;
+
+      // Scroll to the calculated position
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: 'smooth'
+      });
+    } else {
+      console.log(`Target element not found for ${targetId}`);
+    }
+  });
+});
