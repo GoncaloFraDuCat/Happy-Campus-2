@@ -1,20 +1,4 @@
-// Existing smooth scroll functionality
-document.querySelectorAll('a').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
 
-    // Calculate the correct scroll position
-    const targetElement = document.querySelector(this.getAttribute('href'));
-    const navbarHeight = document.querySelector('.navbar').offsetHeight;
-    const scrollPosition = targetElement.offsetTop - navbarHeight;
-
-    // Scroll to the calculated position
-    window.scrollTo({
-      top: scrollPosition,
-      behavior: 'smooth'
-    });
-  });
-});
 
 // New functionality: Detect when.servicos-card-1 divs enter the viewport
 document.addEventListener('DOMContentLoaded', function() {
@@ -46,7 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // New functionality: Expand second <p> within.servicos-card-1 upon clicking "More"
 document.querySelectorAll('.more-button').forEach(button => {
   button.addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default action
+
+     // Prevent the default action
     const description = this.closest('.servicos-card-1'); // Correctly target the parent div
     const descriptionText = description.querySelector('.servicos-description'); // Target the description text
     if (descriptionText.style.maxHeight) {
@@ -89,8 +74,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-document.querySelectorAll('a[href^="#"]:not([href="promocao.html"])').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  console.log(anchor);
+  anchor.addEventListener('click', function (e) {
     e.preventDefault();
 
     // Get the target element
@@ -111,4 +97,25 @@ document.querySelectorAll('a[href^="#"]:not([href="promocao.html"])').forEach(an
       console.log(`Target element not found for ${targetId}`);
     }
   });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var scrollToTopButton = document.getElementById('scroll-to-top-button');
+
+    // Show the button when scrolling starts
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 0) { // Check if scrolled past the top
+            scrollToTopButton.style.opacity = "1";
+            scrollToTopButton.style.visibility = "visible";
+        } else {
+            scrollToTopButton.style.opacity = "0";
+            scrollToTopButton.style.visibility = "hidden";
+        }
+    });
+
+    // Scroll to top when the button is clicked
+    scrollToTopButton.addEventListener('click', function(event) {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
 });

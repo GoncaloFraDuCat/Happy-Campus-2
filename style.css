@@ -11,6 +11,7 @@ body {
   color:black;
 }
 
+
 header {
   background-color: transparent;
   color: darkseagreen;
@@ -162,7 +163,8 @@ header {
 .intro img{
   max-height: 100%;
   max-width: 40%;
-
+  object-fit: cover;
+  object-position: center;
 }
 
 .sobre-card {
@@ -182,7 +184,7 @@ header {
   margin: 0;
   font-style: italic;
   font-weight: 500;
-
+  background-image: url(images/blueback.webp);
 }
 
 .sobre-text {
@@ -191,11 +193,13 @@ header {
   padding-right: 5%;  line-height: 1.5;
   margin: 0;
   max-width: 33%;
+  background-image: url('images/blueback.webp');
 }
 
 .sobre-text h2 {
   font-size: xxx-large;
   text-align: center;
+  text-decoration: overline;
 }
 
 .sobre-p{
@@ -205,6 +209,8 @@ header {
 }
 .hands {
   height: 100%;
+  object-fit: cover;
+  object-position: right;
 }
 
 .plano-de-acao{
@@ -236,7 +242,6 @@ header {
 
 
 .equipa {
-  display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 2%;
@@ -245,7 +250,6 @@ header {
   padding-right: 5%;
   line-height: 1.5;
   margin: 0;
-  background-color: #89a7a7;
 }
 
 .equipa-cards {
@@ -285,13 +289,12 @@ header {
   margin-top: 10px; /* Adds space above the image */
   border-radius: 50%;
   max-width: 270px;
-  border-style: solid;
-  border-color: #2E282A;
+  box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
 }
 
 .equipa  h1 {
   font-size: xx-large;
-  text-align: center;
+  text-decoration: overline;
 }
 
 .atividades-cards {
@@ -304,6 +307,7 @@ header {
   padding-top: 2%;
   margin-left: 5%;
   line-height: 1.5;
+  background-blend-mode: multiply;
 
 }
 
@@ -316,7 +320,7 @@ header {
   left: 0; /* Aligns the text to the left */
   width: 37%;
   overscroll-behavior: contain; /* Prevents scrolling from propagating to the parent */
-
+  padding-left: 50px;
 }
 
 .atividades-card-container {
@@ -330,13 +334,13 @@ header {
   width: 100;
   max-height: 800px;
   background-color: white;
+  background-image: url(images/blueback.webp);
 }
 
 .atividades-card-1 {
   flex: 0 0 auto; /* Prevents the cards from shrinking */
-  height: 600px;
-  color: rgb(255, 255, 255);
-  background-color: #8a7090;
+  height: 550px;
+  background-color: darkslategrey;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   opacity: 0;
   transform: translateY(100%);
@@ -346,14 +350,16 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 60%;
+  max-width: 50%;
   list-style-type: none;
   line-height: 1.5;
   border-radius: 20px;
-  border-style: solid;
-  border-color: black;
   padding-bottom: 10%;
   margin-bottom: 15%;
+  box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
+  margin-left: 10%;
+  background-image: url(images/blueback.webp);
+  background-position: right;
 }
 
 .atividades-card-1 li {
@@ -411,6 +417,7 @@ header {
   line-height: 1.5;
   margin: 0;
   font-size: xxx-large;
+  text-decoration: overline;
 }
 
 /* For Webkit browsers (Chrome, Safari, Opera) */
@@ -444,6 +451,17 @@ header {
   -ms-overflow-style: none;
 }
 
+.atividades-card-container a {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
 .carousel {
   position: relative;
   overflow: hidden;
@@ -455,7 +473,6 @@ header {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background-color: #89a7a7;
 }
 
 
@@ -468,7 +485,6 @@ header {
   padding: 10px;
   cursor: pointer;
   z-index: 10; /* Ensure they are above the cards */
-  background-color: #8D3B72;
 }
 
 .carousel-control.prev {
@@ -480,7 +496,7 @@ header {
 }
 
 #servicos {
-  background-color: #89a7a7;
+  background-color: white;
 }
 .servicos {
   position: relative;
@@ -508,7 +524,6 @@ header {
 
 .servicos-card-1 {
   height: 250px;
-  background-color:antiquewhite; /* Example background color */
   opacity: 0; /* Start with cards invisible */
   transform: translateY(100%); /* Start above the viewport */
   transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Smooth transition for the transform and opacity properties */
@@ -517,12 +532,15 @@ header {
   border-radius: 20px;
   display: flex; /* Make.servicos-card-1 a flex container */
   flex-direction: row; /* Stack children vertically */
-  border-style: solid;
-  border-color: #3c0000;
   flex-shrink: 0;
   scroll-snap-align: start;
   width: 345px; /* Adjust based on how many cards you want to show */
   box-sizing: border-box;
+  box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
+  background-image: url(images/blueback.webp);
+  background-position: right;
+  justify-content: space-between;
+  display: flex;
 }
 
 .more-button {
@@ -533,6 +551,9 @@ header {
   cursor: pointer;
   border: none;
   border-radius: 5px;
+  margin-bottom: 10%;
+  margin-left: 65%;
+
 }
 
 .more-button:hover {
@@ -547,8 +568,7 @@ header {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   object-fit: cover;
-  border-right: solid;
-  border-color: bla;
+  object-position: center;
 }
 
 .servicos-card-1 p {
@@ -566,7 +586,6 @@ header {
 }
 
 .servicos-title{
-  display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 2%;
@@ -576,6 +595,7 @@ header {
   line-height: 1.5;
   margin: 0;
   font-size: xxx-large;
+  text-decoration: overline;
 }
 
 .servicos-description {
@@ -583,6 +603,12 @@ header {
   flex-grow: 1;
 }
 
+.servicos-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
 
 @keyframes slideIn {
   0% {
@@ -599,11 +625,9 @@ header {
 
 .noticias {
   position: relative;
-  margin-top: 3%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 5%;
 }
 
 .noticias-cards {
@@ -611,7 +635,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   overflow: hidden;
-  gap: 5px; /* Creates space between items */
+  gap: 2px; /* Creates space between items */
   width: 70%;
 }
 
@@ -626,7 +650,10 @@ header {
   flex-direction: column; /* Stack children vertically */
   align-items: center;
   width: 250px;
-
+  box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
+  margin: 5%;
+    background-image: url(images/blueback.webp);
+      background-position: right;
 }
 
 .noticias-card-1 img {
@@ -634,9 +661,8 @@ header {
   min-width: 98%;
   min-height: 180px;
   max-height: 185px;
-  border-style: solid;
-  border-radius: 15px;
-  border-color: #8D3B72;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .noticias-card-1 p {
@@ -650,7 +676,6 @@ header {
 
 
 .noticias-title{
-  display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 2%;
@@ -660,6 +685,7 @@ header {
   line-height: 1.5;
   margin: 0;
   font-size: xxx-large;
+  text-decoration: overline;
 }
 
 .noticia-date
@@ -669,9 +695,30 @@ font-size: xx-large;
 
 
 
+#scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  /* Adjust based on your design */
+  right: 60px;
+  /* Adjust based on your design */
+  z-index: 1000;
+  /* Ensure it's above other content */
+  width: 50px;
+}
 
+/* Hide the button initially */
+#scroll-to-top-button[style] {
+  opacity: 0;
+  visibility: hidden;
+}
 
-
+#scroll-to-top-button img {
+  width: 100%;
+  padding: 5px;
+  height: auto;
+  background: aqua;
+  border-radius: 26px;
+}
 /* FOOTER FOR LAST */
 
 
