@@ -185,6 +185,11 @@ header {
   font-style: italic;
   font-weight: 500;
   background-image: url(images/blueback.webp);
+  background-repeat: no-repeat;
+  /* Prevents the image from repeating */
+  background-size: cover;
+  /* Stretches the image to cover the entire element */
+  background-position: center;/
 }
 
 .sobre-text {
@@ -193,8 +198,12 @@ header {
   padding-right: 5%;  line-height: 1.5;
   margin: 0;
   max-width: 33%;
-  background-image: url('images/blueback.webp');
-}
+  background-image: url(images/blueback.webp);
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    background-size: cover;
+    /* Stretches the image to cover the entire element */
+    background-position: center;/}
 
 .sobre-text h2 {
   font-size: xxx-large;
@@ -335,7 +344,11 @@ header {
   max-height: 800px;
   background-color: white;
   background-image: url(images/blueback.webp);
-}
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    background-size: cover;
+    /* Stretches the image to cover the entire element */
+    background-position: center;/}
 
 .atividades-card-1 {
   flex: 0 0 auto; /* Prevents the cards from shrinking */
@@ -359,7 +372,11 @@ header {
   box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
   margin-left: 10%;
   background-image: url(images/blueback.webp);
-  background-position: right;
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    background-size: cover;
+    /* Stretches the image to cover the entire element */
+    background-position: center;/  background-position: right;
 }
 
 .atividades-card-1 li {
