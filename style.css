@@ -69,9 +69,6 @@ header {
 }
 
 
-.page-contents {
-
-}
 
 .banner-wrapper {
   margin-top: 1px; /* Adjust this value based on the actual height of your navbar */
@@ -705,31 +702,31 @@ font-size: xx-large;
 }
 
 
-
 #scroll-to-top-button {
   position: fixed;
   bottom: 20px;
-  /* Adjust based on your design */
   right: 60px;
-  /* Adjust based on your design */
   z-index: 1000;
-  /* Ensure it's above other content */
   width: 50px;
+  opacity: 0; /* Default opacity */
+  visibility: hidden; /* Default visibility */
+  transition: opacity 0.3s ease-in-out; /* Transition for opacity */
 }
 
-/* Hide the button initially */
 #scroll-to-top-button[style] {
   opacity: 0;
   visibility: hidden;
+  transition: opacity 0.3s ease-in-out; /* Ensure transition applies to default state */
 }
 
 #scroll-to-top-button img {
   width: 100%;
   padding: 5px;
   height: auto;
-  background: aqua;
-  border-radius: 26px;
+  background-color: rgba(212, 212, 255, 0.85);
+  border-radius: 35px;
 }
+
 /* FOOTER FOR LAST */
 
 
