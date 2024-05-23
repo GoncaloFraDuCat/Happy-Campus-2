@@ -67,13 +67,53 @@ img {
 }
 
 .navbar-logo {
-  width: 103px;
+  width: 50px;
   padding-top: 5px;
   padding-left: 30px;
   position: fixed;
   left: 20px;
   z-index: 1000;
 }
+
+.navbar-logo-0 {
+  width: 112px;
+  padding-top: 19px;
+  padding-left: 30px;
+  position: fixed;
+  left: 82px;
+  z-index: 1000;
+}
+
+
+.navbar-logo-1 {
+  width: 80px;
+  padding-top: 13px;
+  padding-left: 30px;
+  position: fixed;
+  right: 195px;
+  z-index: 1000;
+}
+
+
+.navbar-logo-2 {
+  width: 80px;
+  padding-top: 4px;
+  padding-left: 30px;
+  position: fixed;
+  right: 105px;
+  z-index: 1000;
+}
+
+
+.navbar-logo-3 {
+  width: 80px;
+  padding-top: 17px;
+  padding-left: 30px;
+  position: fixed;
+  right: 20px;
+  z-index: 1000;
+}
+
 
 .banner-wrapper {
   margin-top: 1px;
@@ -399,7 +439,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   line-height: 1.5;
   margin: 0;
 }
@@ -530,7 +569,7 @@ img {
   flex-direction: row;
   flex-shrink: 0;
   scroll-snap-align: start;
-  width: 345px;
+  width: 400px;
   box-sizing: border-box;
   box-shadow: 0 1px 3px #afafaf;
   /* background-image: url(images/blueback.webp); */
@@ -781,4 +820,35 @@ img {
   padding-left: 5%;
   font-size: xx-large;
   text-decoration: overline;
+}
+
+.fale-connosco {
+  display: flex;
+  flex-direction: row;
+}
+
+.fale-connosco img {
+  max-width: 50%;
+  height: 580px;
+  object-fit: cover;
+  object-position: right;
+}
+
+.fale-connosco-title {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 0;
+  font-size: xxx-large;
+  text-decoration: overline;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+.fale-connosco-description {
+  line-height: 1.5;
+  font-size: xx-large;
+  padding: 2% 5%;
+  padding-bottom: 0;
 }
