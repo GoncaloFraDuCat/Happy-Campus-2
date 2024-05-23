@@ -696,6 +696,7 @@ img {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   object-fit: cover;
+  height: 160px;
 }
 
 .noticias-card-1 .text {
@@ -842,13 +843,11 @@ img {
   margin: 0;
   font-size: xxx-large;
   text-decoration: overline;
-  padding-top: 5%;
-  padding-left: 5%;
+  padding: 4% 8.5% 0px;
 }
 
 .fale-connosco-description {
   line-height: 1.5;
-  font-size: xx-large;
-  padding: 2% 5%;
-  padding-bottom: 0;
+  font-size: x-large;
+  padding: 4% 8.5% 0px;
 }
