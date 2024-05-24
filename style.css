@@ -814,6 +814,7 @@ img {
   max-height: 250px;
   min-width: 249px;
   min-height: 249px;
+  object-fit: cover;
 }
 
 .servicos-page-title {
