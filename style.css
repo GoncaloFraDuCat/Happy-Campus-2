@@ -37,8 +37,13 @@ body {
   }
 
   .navbar-logo-0 {
-    width: 0;
-    display: none;
+    width: 7vh;
+    padding-top: 0.7vh;
+    position: fixed;
+    left: -0.5vh;
+    z-index: 1000;
+    right: 18px;
+    margin: 0;
   }
 
   .navbar-logo-1 {
@@ -238,6 +243,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     background-color: var(--secondary-color);
+    background-image: url('images/whitebackgroundwithh.png');
   }
 
   .sobre-card img {
@@ -245,7 +251,6 @@ body {
   }
 
   .texto-intro {
-    padding-top: 4%;
     padding-bottom: 5%;
     padding-left: 8%;
     padding-right: 5%;
@@ -325,6 +330,7 @@ body {
     padding-right: 5%;
     line-height: 1.5;
     margin: 0;
+    background-image: url('images/whitebackgroundwithh.png');
   }
 
   .equipa-cards {
@@ -785,7 +791,7 @@ body {
     width: 70%;
     padding: 0;
     min-height: auto;
-    background: white;
+    background: black;
     border-radius: 35px;
   }
 
@@ -971,12 +977,12 @@ body {
   }
 
   .navbar-logo {
-    width: 50px;
-    padding-top: 5px;
-    padding-left: 30px;
+    width: 130px;
     position: fixed;
     left: 20px;
     z-index: 1000;
+    padding-bottom: 41px;
+    bottom: 665px;
   }
 
   .navbar-logo-0 {
@@ -1031,14 +1037,16 @@ body {
     text-align: center;
     color: white;
     z-index: 999;
+    background-color: black;
   }
 
   .banner img {
-    object-fit: cover;
+    object-fit: scale-down;
     max-width: 100%;
     max-height: 100%;
     width: 100%;
     height: calc(100vh - 180px - 61.5px);
+
   }
 
   .banner-text {
@@ -1082,30 +1090,12 @@ body {
     padding-bottom: 3%;
   }
 
-  .parceria {
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-    border-style: solid;
-    border-width: 1px 0;
-    border-color: brown;
-    gap: 110px;
-    margin-right: 21px;
-    background-color: black;
-    width: 95%;
-  }
-
-  .parceria img {
-    width: 200px;
-    height: 166px;
-    object-fit: contain;
-  }
-
   #intro {
     display: flex;
     line-height: 1.5;
     margin: 0;
     /* background-color: #89a7a7; */
+    background-image: url('images/whitebackgroundwithh.png');
   }
 
   #intro img {
@@ -1118,11 +1108,13 @@ body {
     display: flex;
     background-color: var(--secondary-color);
     height: calc(100vh - 3px - 61.5px);
+    background-image: url('images/whitebackgroundwithh.png');
   }
 
   .sobre-card img {
     max-width: 60%;
   }
+
 
   .texto-intro {
     padding-top: 11%;
@@ -1138,6 +1130,7 @@ body {
     background-size: cover;
     background-position: center;
     font-size: 1.8em;
+    background-image: url('images/whitebackgroundwithhright.png');
   }
 
   .sobre-text {
@@ -1151,6 +1144,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-image: url('images/whitebackgroundwithh.png');
   }
 
   .sobre-text h2 {
@@ -1162,7 +1156,6 @@ body {
   .sobre-p {
     line-height: 1.5;
     font-size: large;
-    padding-top: 10%;
   }
 
   .hands {
@@ -1206,6 +1199,7 @@ body {
     padding-right: 5%;
     line-height: 1.5;
     margin: 0;
+    background-image: url('images/whitebackgroundwithhright.png');
   }
 
   .equipa-cards {
@@ -1252,7 +1246,7 @@ body {
   }
 
   #atividades {
-    background-image: url('images/bacgkrey.jpg');
+    background-image: url('images/greybackgroundwithhright.png');
   }
 
   .atividades-cards {
@@ -1293,6 +1287,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-image: url('images/greybackgroundwithhright.png');
   }
 
   .atividades-card-1 {
@@ -1565,18 +1560,23 @@ body {
 
   #noticias {
     background-color: var(--secondary-color);
+    width: 100%;
   }
 
   .noticias {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    max-height: 80vh;
+    overflow-y: auto;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
 
   .noticias-cards {
     display: flex;
-    flex-wrap: wrap;
+
     justify-content: space-around;
     gap: 60px;
     padding: 70px 0;
@@ -1597,6 +1597,15 @@ body {
     box-shadow: 0 1px 3px #afafaf;
     /* background-image: url(images/blueback.webp); */
     background-position: right;
+    flex-shrink: 0;
+    /* Prevent cards from shrinking */
+  }
+
+
+
+  .noticias-card-1:hover {
+    transform: scale(1.1);
+    /* Enlarge the div by 10% */
   }
 
   .noticias-card-1 img {
@@ -1638,6 +1647,10 @@ body {
     font-size: x-large;
   }
 
+  .news-button {
+    text-decoration: none;
+  }
+
   #scroll-to-top-button {
     position: fixed;
     bottom: 20px;
@@ -1659,7 +1672,7 @@ body {
     width: 100%;
     padding: 5px;
     min-height: auto;
-    background: white;
+    background: black;
     border-radius: 35px;
   }
 
