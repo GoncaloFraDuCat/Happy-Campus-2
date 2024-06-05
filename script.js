@@ -43,72 +43,70 @@ document.querySelectorAll('.more-button').forEach(button => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  const carousel = document.querySelector('.servicos');
-  const prevButton = document.querySelector('.carousel-control.prev');
-  const nextButton = document.querySelector('.carousel-control.next');
+  // Initialize.servicos carousel
+  const servicosCarousel = document.querySelector('.servicos');
+  const servicosPrevButton = document.getElementById('servicos-prev');
+  const servicosNextButton = document.getElementById('servicos-next');
 
-  let scrollPerClick;
-  let currentScrollPosition = 0;
+  let scrollPerClickServicos;
+  let currentScrollPositionServicos = 0;
 
-  // Calculate the amount to scroll per click based on the width of one card
-  scrollPerClick = carousel.offsetWidth / 3;
+  scrollPerClickServicos = servicosCarousel.offsetWidth / 3;
 
-  prevButton.addEventListener('click', function () {
-    if (currentScrollPosition > 0) {
-      currentScrollPosition -= scrollPerClick;
-      carousel.scrollTo({
-        left: currentScrollPosition,
+  servicosPrevButton.addEventListener('click', function () {
+    if (currentScrollPositionServicos > 0) {
+      currentScrollPositionServicos -= scrollPerClickServicos;
+      servicosCarousel.scrollTo({
+        left: currentScrollPositionServicos,
         behavior: 'smooth'
       });
     }
   });
 
-  nextButton.addEventListener('click', function () {
-    if (currentScrollPosition < carousel.scrollWidth - carousel.offsetWidth) {
-      currentScrollPosition += scrollPerClick;
-      carousel.scrollTo({
-        left: currentScrollPosition,
+  servicosNextButton.addEventListener('click', function () {
+    if (currentScrollPositionServicos < servicosCarousel.scrollWidth - servicosCarousel.offsetWidth) {
+      currentScrollPositionServicos += scrollPerClickServicos;
+      servicosCarousel.scrollTo({
+        left: currentScrollPositionServicos,
+        behavior: 'smooth'
+      });
+    }
+  });
+
+  // Initialize.noticias carousel
+  const noticiasCarousel = document.querySelector('.noticias');
+  const noticiasPrevButton = document.getElementById('noticias-prev');
+  const noticiasNextButton = document.getElementById('noticias-next');
+
+  let scrollPerClickNoticias;
+  let currentScrollPositionNoticias = 0;
+
+  scrollPerClickNoticias = noticiasCarousel.offsetWidth / 3;
+
+  noticiasPrevButton.addEventListener('click', function () {
+    if (currentScrollPositionNoticias > 0) {
+      currentScrollPositionNoticias -= scrollPerClickNoticias;
+      noticiasCarousel.scrollTo({
+        left: currentScrollPositionNoticias,
+        behavior: 'smooth'
+      });
+    }
+  });
+
+  noticiasNextButton.addEventListener('click', function () {
+    if (currentScrollPositionNoticias < noticiasCarousel.scrollWidth - noticiasCarousel.offsetWidth) {
+      currentScrollPositionNoticias += scrollPerClickNoticias;
+      noticiasCarousel.scrollTo({
+        left: currentScrollPositionNoticias,
         behavior: 'smooth'
       });
     }
   });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  const carousel = document.querySelector('.noticias');
-  const prevButton = document.querySelector('.carousel-control.prev');
-  const nextButton = document.querySelector('.carousel-control.next');
-
-  let scrollPerClick;
-  let currentScrollPosition = 0;
-
-  // Calculate the amount to scroll per click based on the width of one card
-  scrollPerClick = carousel.offsetWidth / 3;
-
-  prevButton.addEventListener('click', function () {
-    if (currentScrollPosition > 0) {
-      currentScrollPosition -= scrollPerClick;
-      carousel.scrollTo({
-        left: currentScrollPosition,
-        behavior: 'smooth'
-      });
-    }
-  });
-
-  nextButton.addEventListener('click', function () {
-    if (currentScrollPosition < carousel.scrollWidth - carousel.offsetWidth) {
-      currentScrollPosition += scrollPerClick;
-      carousel.scrollTo({
-        left: currentScrollPosition,
-        behavior: 'smooth'
-      });
-    }
-  });
-});
 
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  console.log(anchor);
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
 
@@ -117,7 +115,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const targetElement = document.querySelector(targetId);
 
     // Check if targetElement is not null
-    if (targetElement!== null) { // Add this condition
+    if (targetElement!== null) {
+      // Calculate the scroll position, adjusting for the height of the navbar
       const navbarHeight = document.querySelector('.navbar')? document.querySelector('.navbar').offsetHeight : 0;
       const scrollPosition = targetElement.offsetTop - navbarHeight;
 
@@ -131,6 +130,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
 
 
 document.addEventListener('DOMContentLoaded', function() {

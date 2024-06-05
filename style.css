@@ -1041,7 +1041,7 @@ body {
   }
 
   .banner img {
-    object-fit: scale-down;
+    object-fit: cover;
     max-width: 100%;
     max-height: 100%;
     width: 100%;
@@ -1566,20 +1566,20 @@ body {
   .noticias {
     position: relative;
     display: flex;
-    justify-content: center;
+
     max-height: 80vh;
     overflow-y: auto;
     flex-direction: row;
     overflow-y: hidden;
     overflow-x: hidden;
+    padding-left: 1%;
   }
 
   .noticias-cards {
     display: flex;
-
     justify-content: space-around;
     gap: 60px;
-    padding: 70px 0;
+    padding-top: 30px;
   }
 
   .noticias-card-1 {
@@ -1650,6 +1650,7 @@ body {
   .news-button {
     text-decoration: none;
   }
+
 
   #scroll-to-top-button {
     position: fixed;

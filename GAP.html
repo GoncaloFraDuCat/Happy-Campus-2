@@ -30,14 +30,12 @@
     <img src="images/dges-logo.png" alt="Logo" class="navbar-logo-3">
   </nav>
 
-  <h1 class="servicos-page-title">Grupo de Apoio Psicológico</h1>
+  <h1 class="servicos-page-title">GAP - Gabinete de Apoio Psicológico</h1>
 
   <p class="giaae-text">
-    O Gabinete de Apoio Psicológico (GAP) – estrutura comum, cuja equipa desenvolve
-    ações desde promoção da saúde mental, prevenção da doença mental e efetua ainda
-    o acompanhamento e intervenção em situações pontuais ou de continuidade de
-    natureza psicológica e/ou psicopedagógica.
-
+    O ISEC Lisboa disponibiliza aos seus estudantes, docentes e funcionários o Gabinete de Apoio Psicológico (GAP). Este
+    gabinete presta um conjunto de serviços na área da psicologia, tendo em vista a promoção do desenvolvimento pessoal,
+    académico e profissional de toda a comunidade escolar.
   </p>
 
   <div class="gap-card-1">
@@ -45,18 +43,18 @@
     <div class="gap-card-info">
       <h3 class="staff-name"> Drª Ana Maria Medeiros </h3>
       <p> Especialidade: <strong>Psicologia</strong> </p>
-      <p> Contacto: <strong>maria.medeiros@iseclisboa.pt</strong> </p>
-      <p> Horario de Consulta: <strong>Terça-feira (14.00-16.00)</strong></p>
+      <p> Contacto: <strong>gap@iseclisboa.pt (Agendamento com 72h de antecedência mínima)</strong> </p>
+      <p> Horario de Consulta: <strong>5.ª Feira (17.00-19.00)</strong></p>
     </div>
   </div>
   <div class="gap-card-1">
-    <img src="images/ana_gui_martins.jpeg" alt="GAP">
+    <img src="images/sandra_almeida.png" alt="GAP">
     <div class="gap-card-info">
-      <h3 class="staff-name"> Drª Ana Guimarães Martins </h3>
+      <h3 class="staff-name"> Drª Sandra Almeida </h3>
       <p> Especialidade: <strong>Psicologia</strong> </p>
       </p>
-      <p> Contacto: <strong>ana.martins@iseclisboa.pt</strong></p>
-      <p> Horario de Consulta: <strong>Quinta-feira (11.00-15.00)</strong></p>
+      <p> Contacto: <strong>gap@iseclisboa.pt</strong></p>
+      <p> Horario de Consulta: <strong>5.ª Feira e/ou 6.ªFeira (14.00-20.00)</strong></p>
     </div>
   </div>
 
@@ -80,4 +78,31 @@
     </div>
     </div>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var anchors = document.querySelectorAll('.navbar a[href^="#"]');
+      anchors.forEach(function (anchor) {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault(); // Prevent the default jump to the section
+
+          // Redirect to index.html
+          window.location.href = "index.html";
+
+          // Wait for the page to load, then scroll to the section
+          setTimeout(function () {
+            var targetId = anchor.getAttribute('href');
+            var targetElement = document.querySelector(targetId);
+            var position = targetElement.offsetTop;
+            window.scrollTo({
+              top: position,
+              behavior: 'smooth'
+            });
+          }, 500); // Adjust the timeout as needed
+        });
+      });
+    });
+  </script>
+
+
 </body>
