@@ -255,7 +255,7 @@ body {
     padding-left: 8%;
     padding-right: 5%;
     line-height: 1.5;
-    margin: 0;
+    margin: 5%;
     font-style: italic;
     font-weight: 500;
     /* background-image: url(images/blueback.webp); */
@@ -477,7 +477,8 @@ body {
   .atividades-descrption {
     margin: 0;
     flex-grow: 1;
-    width: 52vh
+    width: 52vh;
+    margin-top: 5%;
   }
 
   .atividades-card-1-text img {
@@ -542,7 +543,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding-top: 0;
+    padding-top: 7%;
   }
 
   .carousel-control {
@@ -696,21 +697,25 @@ body {
 
   #noticias {
     background-color: var(--secondary-color);
+    width: 100%;
   }
 
   .noticias {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
+    max-height: 120vh;
+    overflow-y: auto;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: hidden;
     justify-content: center;
   }
 
   .noticias-cards {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     gap: 60px;
-    padding: 20px 0 40px;
+    padding-top: 7px;
   }
 
   .noticias-card-1 {
@@ -723,12 +728,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 285px;
-    height: 370px;
+    width: 380px;
+    height: 560px;
     box-shadow: 0 1px 3px #afafaf;
     /* background-image: url(images/blueback.webp); */
     background-position: right;
-    margin-bottom: 15px;
+    flex-shrink: 0;
+    /* Prevent cards from shrinking */
+  }
+
+
+
+  .noticias-card-1:hover {
+    transform: scale(1.1);
+    /* Enlarge the div by 10% */
   }
 
   .noticias-card-1 img {
@@ -760,14 +773,18 @@ body {
     text-align: justify;
     line-height: 1.5;
     margin: auto;
-    font-size: x-large;
+    font-size: xx-large;
     text-decoration: overline;
-    padding: 5% 5%;
+    padding: 2% 5%;
     padding-bottom: 0;
   }
 
   .noticia-date {
     font-size: x-large;
+  }
+
+  .news-button {
+    text-decoration: none;
   }
 
   #scroll-to-top-button {
@@ -850,6 +867,7 @@ body {
     margin-right: 25%;
     margin-bottom: 20px;
     box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
+    width: 90%;
   }
 
   .gap-card-amb {
@@ -930,6 +948,42 @@ body {
     margin: 0;
   }
 
+  .giaae-text-intro {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 25%;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .giaae-pillar-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    background-color: #FFE7E5;
+    line-height: 1.5;
+    height: 150%;
+  }
+
+  .giaae-pillar-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    line-height: 1.5;
+    height: 100%;
+  }
+
+  .giaae-body {
+    display: flex;
+    flex-direction: row;
+    height: 72vh;
+  }
+
+  .giaae-pillar-1 img {
+    width: 20vh;
+    border-radius: 5px;
+  }
 }
 
 
@@ -2036,6 +2090,7 @@ body {
     justify-content: space-between;
     box-shadow: 0 1px 3px #afafaf;
     height: 60vh;
+    padding-bottom: 2%
   }
 
   .sfbe-rows-2 {
@@ -2167,7 +2222,7 @@ body {
 
   .prom-img {
     width: 519px;
-    height: 500px;
+    height: 600px;
   }
 
   .prom-gap-card-1 {
@@ -2181,6 +2236,7 @@ body {
     margin-bottom: 20px;
     box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
     line-height: 1.5;
+    height: 72vh;
 
   }
 
