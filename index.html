@@ -21,7 +21,7 @@
 
   <nav>
     <a href="index.html">
-      <img src="images/final-logo.png" alt="Logo" class="navbar-logo">
+      <img src="images/HC-logo-black.png" alt="Logo" class="navbar-logo">
     </a>
     <ul class="navbar">
       <li><a href="#home">Home</a></li>
@@ -30,9 +30,9 @@
       <li><a href="#servicos">Serviços</a></li>
       <li><a href="#noticias">Notícias</a></li>
     </ul>
-    <img src="images/navbar-logo.png" alt="Logo" class="navbar-logo-1">
-    <img src="images/istec-simple-logo.png" alt="Logo" class="navbar-logo-2">
-    <img src="images/dges-logo.png" alt="Logo" class="navbar-logo-3">
+    <img src="images/logo-isec-black.png" alt="Logo" class="navbar-logo-1">
+    <img src="images/logo-istec-black.png" alt="Logo" class="navbar-logo-2">
+    <img src="images/logo-dges.jpg" alt="Logo" class="navbar-logo-3">
   </nav>
 
 
@@ -46,21 +46,28 @@
       </div>
     </div>
 
-    <div class="banner-text">
-      <div class="banner-text-1">
-        <h1> Saúde Mental </h1>
-        <p> A Nossa Missão </p>
-      </div>
+    <a href="#sobre">
+      <div class="banner-text">
+        <div class="banner-text-1">
+          <h1> Saúde Mental </h1>
+          <p> A Nossa Missão </p>
+        </div>
+
+    </a>
+
+    <a href="#atividades">
       <div class="banner-text-2">
         <h1> Atividades & Serviços </h1>
         <p> O Nosso Plano </p>
       </div>
+    </a>
 
+    <a href="#fale-connosco-section">
       <div class="banner-text-3">
         <h1> Tens Perguntas </h1>
         <p> Contacta-nos para qualquer dúvida :) </p>
       </div>
-
+    </a>
     </div>
   </section>
 
@@ -490,6 +497,19 @@
         <p class="fale-connosco-description">
           happycampus@iseclisboa.pt
         </p>
+
+        <form class="contact-form" action="https://formspree.io/f/mnnanobv" method="POST">
+          <label class="form-label">
+            Email:
+            <input type="email" class="form-email" name="email">
+          </label>
+          <label class="form-label">
+            Mensagem:
+            <textarea name="message" class="form-msg"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button class="submit-msg" type="submit">Enviar</button>
+        </form>
 
       </div>
 

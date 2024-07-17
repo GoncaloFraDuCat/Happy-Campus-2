@@ -1310,12 +1310,12 @@ body {
   }
 
   .navbar-logo {
-    top: -6px;
-    width: 130px;
+    top: 9px;
+    width: 108px;
     position: fixed;
-    left: 20px;
+    left: 29px;
     z-index: 1000;
-    padding-bottom: 41px;
+    padding-bottom: 28px;
   }
 
   .navbar-logo-0 {
@@ -1329,21 +1329,21 @@ body {
 
 
   .navbar-logo-1 {
-    width: 80px;
+    width: 87px;
     padding-top: 13px;
-    padding-left: 30px;
+    padding-left: 28px;
     position: fixed;
-    right: 195px;
+    right: 210px;
     z-index: 1000;
   }
 
 
   .navbar-logo-2 {
-    width: 68px;
-    padding-top: 10px;
+    width: 80px;
+    padding-top: 20px;
     padding-left: 30px;
     position: fixed;
-    right: 110px;
+    right: 117px;
     z-index: 1000;
   }
 
@@ -1385,9 +1385,28 @@ body {
 
   .banner-text {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: white;
     height: 180px;
+    width: 100%;
+    align-items: start;
+  }
+
+
+  .banner-text a {
+    /* Targets direct children of .banner-text */
+    background-color: inherit;
+    /* Keeps the background color defined in .banner-text-1, .banner-text-2, etc. */
+    text-align: center;
+    padding-bottom: 3%;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* Each child takes up 25% of the parent's width */
+    height: 100%;
   }
 
   .banner-text h1 {
@@ -1398,30 +1417,110 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #2e282a;
-    width: -webkit-fill-available;
+
     text-align: center;
     padding-top: 2%;
     padding-bottom: 3%;
+    color: white;
+    /* Inherits the color from its parent */
+    text-decoration: none;
+    /* Removes the underline */
+
+    padding: 0;
+    /* Resets padding */
+    margin: 0;
+    /* Resets margin */
+    width: 100%;
+    /* Ensures the link covers the full width of its parent */
+    height: 100%;
   }
 
   .banner-text-2 {
     display: flex;
     flex-direction: column;
     background-color: #17bebb;
-    width: -webkit-fill-available;
+
     text-align: center;
     padding-top: 2%;
     padding-bottom: 3%;
+    color: white;
+    /* Inherits the color from its parent */
+    text-decoration: none;
+    /* Removes the underline */
+
+    padding: 0;
+    /* Resets padding */
+    margin: 0;
+    /* Resets margin */
+    width: 100%;
+    /* Ensures the link covers the full width of its parent */
+    height: 100%;
   }
 
   .banner-text-3 {
     display: flex;
     flex-direction: column;
     background-color: #cd5334;
-    width: -webkit-fill-available;
+
     text-align: center;
     padding-top: 2%;
     padding-bottom: 3%;
+    color: white;
+    /* Inherits the color from its parent */
+    text-decoration: none;
+    /* Removes the underline */
+    padding: 0;
+    /* Resets padding */
+    margin: 0;
+    /* Resets margin */
+    width: 100%;
+    /* Ensures the link covers the full width of its parent */
+    height: 100%;
+  }
+
+  .banner-text-3 a {
+    color: inherit;
+    /* Or specify a color directly, e.g., color: white; */
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    /* Aligns content center if needed */
+    align-items: center;
+    /* Aligns content vertically center if needed */
+    width: 100%;
+    /* Ensures the link covers the full width of its parent */
+    height: 100%;
+    /* Ensures the link covers the full height of its parent */
+  }
+
+  .banner-text-2 a {
+    color: inherit;
+    /* Or specify a color directly, e.g., color: white; */
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    /* Aligns content center if needed */
+    align-items: center;
+    /* Aligns content vertically center if needed */
+    width: 100%;
+    /* Ensures the link covers the full width of its parent */
+    height: 100%;
+    /* Ensures the link covers the full height of its parent */
+  }
+
+  .banner-text-1 a {
+    color: inherit;
+    /* Or specify a color directly, e.g., color: white; */
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    /* Aligns content center if needed */
+    align-items: center;
+    /* Aligns content vertically center if needed */
+    width: 100%;
+    /* Ensures the link covers the full width of its parent */
+    height: 100%;
+    /* Ensures the link covers the full height of its parent */
   }
 
   #intro {
@@ -1472,7 +1571,7 @@ body {
     padding-left: 5%;
     padding-right: 5%;
     line-height: 1.5;
-    margin: 0;
+    margin: 3vh;
     max-width: 33%;
     /* background-image: url(images/blueback.webp); */
     background-repeat: no-repeat;
@@ -2489,6 +2588,13 @@ body {
     box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
     padding: 2%;
     line-height: 1.5;
+    text-decoration: none;
+    color: black;
+  }
+
+  .rem-gap-card-1>a {
+    text-decoration: none;
+    color: black;
   }
 
   .prom-img {
@@ -2515,5 +2621,41 @@ body {
     min-height: 249px;
     object-fit: cover;
 
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 4% 8.5% 0px;
+    line-height: 1.5;
+    margin: 0;
+    width: 45%;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .form-label {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+  }
+
+  .submit-msg {
+    background-color: #007bff;
+    font-weight: 200;
+    font-size: 1em;
+    color: white;
+    padding: 2%;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5%;
+  }
+
+  .form-msg {
+    height: 18vh;
+  }
+
+  .form-email {
+    height: 2vh;
   }
 }
