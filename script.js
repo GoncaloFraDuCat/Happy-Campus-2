@@ -152,3 +152,40 @@ document.addEventListener('DOMContentLoaded', function() {
         window.scrollTo({top: 0, behavior: 'smooth'});
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Initialize atividades carousel
+  const atividadesCarousel = document.querySelector('.atividades-cards');
+  const atividadesPrevButton = document.getElementById('atividades-prev');
+  const atividadesNextButton = document.getElementById('atividades-next');
+
+  let scrollPerClickAtividades;
+  let currentScrollPositionAtividades = 0;
+
+  // Calculate scroll distance based on card width and desired scroll increment
+  const cardWidth = atividadesCarousel.children[0].offsetWidth; // Assuming all cards have the same width
+  scrollPerClickAtividades = cardWidth * 1; // Adjust multiplier as needed
+
+  atividadesPrevButton.addEventListener('click', function () {
+    currentScrollPositionAtividades -= scrollPerClickAtividades;
+    if (currentScrollPositionAtividades < 0) {
+      currentScrollPositionAtividades = 0; // Prevent scrolling too far left
+    }
+    atividadesCarousel.scrollTo({
+      left: currentScrollPositionAtividades,
+      behavior: 'smooth'
+    });
+  });
+
+  atividadesNextButton.addEventListener('click', function () {
+    const maxScrollLeft = atividadesCarousel.scrollWidth - atividadesCarousel.offsetWidth;
+    currentScrollPositionAtividades += scrollPerClickAtividades;
+    if (currentScrollPositionAtividades > maxScrollLeft) {
+      currentScrollPositionAtividades = maxScrollLeft; // Prevent scrolling too far right
+    }
+    atividadesCarousel.scrollTo({
+      left: currentScrollPositionAtividades,
+      behavior: 'smooth'
+    });
+  });
+});
