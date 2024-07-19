@@ -1337,7 +1337,7 @@ body {
   }
 
   .banner {
-    height: 78%;
+    height: 83%;
   }
 
   .banner-text-container {
@@ -1349,7 +1349,7 @@ body {
     max-width: 100%;
     max-height: 100%;
     width: 100%;
-
+    height: 100%;
   }
 
   .banner-text {
@@ -1389,7 +1389,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 2%;
+
     padding-bottom: 3%;
     color: white;
     /* Inherits the color from its parent */
@@ -1774,6 +1774,11 @@ body {
   border: none;
   border-radius: 5px;
   text-decoration: none;
+}
+
+.atividades-card-container a:hover {
+  border-style: solid;
+  color: black;
 }
 
 .carousel {
@@ -2310,6 +2315,10 @@ body {
   text-decoration: none;
 }
 
+.news-button:hover {
+  text-decoration: underline;
+}
+
 /*GRSA*/
 
 .grsa-body {
@@ -2575,6 +2584,11 @@ body {
   width: 13vh;
 }
 
+.submit-msg:hover {
+  border-style: solid;
+  color: black;
+}
+
 .form-msg {
   height: 18vh;
 }
@@ -2601,11 +2615,20 @@ body {
   margin-bottom: 20px;
   box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
   line-height: 1.5;
-  height: 30vh;
+  height: 24vh;
+  width: 160vh;
 }
 
 .recursos-text {
   padding-right: 3vh;
+}
+
+.recursos-text-box {
+  width: 100%;
+}
+
+.recursos-img {
+  width: 20%;
 }
 
 .fale-padrao {
@@ -2632,4 +2655,68 @@ body {
 ::-webkit-scrollbar {
   width: 0px;
   /* Adjust scrollbar width */
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.open-modal {
+  display: inline-block;
+  background-color: seagreen;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+
+}
+
+.open-modal:hover {
+  border-style: solid;
+  color: black;
 }
