@@ -1381,7 +1381,7 @@ body {
   }
 
   .banner-text h1 {
-    padding: 10% 0% 0% 0%;
+    padding: 7% 0% 0% 0%;
     margin: 0;
   }
 
@@ -2587,7 +2587,7 @@ body {
   padding-top: 2%;
   padding-left: 5%;
   font-size: xx-large;
-  text-decoration: overline;
+
 }
 
 
@@ -2602,6 +2602,10 @@ body {
   box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
   line-height: 1.5;
   height: 30vh;
+}
+
+.recursos-text {
+  padding-right: 3vh;
 }
 
 .fale-padrao {
