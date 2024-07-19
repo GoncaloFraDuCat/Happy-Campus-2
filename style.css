@@ -2633,7 +2633,10 @@ body {
 }
 
 .recursos-img {
-  width: 20%;
+  background-color: #71dc09;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fale-padrao {
