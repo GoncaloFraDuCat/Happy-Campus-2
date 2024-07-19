@@ -18,6 +18,10 @@ body {
 
 @media (max-width: 481px) {
 
+  html {
+    scrollbar-width: none;
+    /* Adjust scr
+  }
 
   body {
     margin: 0;
@@ -132,9 +136,7 @@ body {
   }
 
 
-  .banner-wrapper {
-    margin-top: 1px;
-  }
+
 
   .banner {
     background-image: url('student-mental_63942274.png');
@@ -278,8 +280,8 @@ body {
 
   .sobre-text h2 {
     font-size: larger;
-    text-align: left;
-    text-decoration: overline;
+    text-align: center;
+
   }
 
   .sobre-p {
@@ -324,7 +326,6 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 7%;
-    padding-bottom: 3%;
     padding-left: 5%;
     padding-right: 5%;
     line-height: 1.5;
@@ -422,7 +423,7 @@ body {
     overflow-y: scroll;
     gap: 10px;
     height: auto;
-    background-color: white;
+    background: white;
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -443,7 +444,7 @@ body {
     margin: 20px auto;
     list-style-type: none;
     line-height: 1.5;
-    border-radius: 5px;
+
     padding-bottom: 30px;
     box-shadow: 0 1px 3px #afafaf;
     /* background-image: url(images/blueback.webp); */
@@ -493,15 +494,6 @@ body {
     width: 0;
   }
 
-  .atividades-title {
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    line-height: 1.5;
-    margin: 0;
-    font-size: x-large;
-    text-decoration: overline;
-  }
 
   .atividades-card-container::-webkit-scrollbar {
     display: none;
@@ -599,8 +591,8 @@ body {
     display: flex;
     gap: 66px;
     width: 62%;
-    margin-bottom: 5vh;
-    padding-top: 7vh;
+    margin-bottom: 3vh;
+    padding-top: 5vh;
   }
 
   .servicos-card-1 {
@@ -704,7 +696,7 @@ body {
   }
 
   #noticias {
-    background-color: #ffe7e5;
+    background-color: white;
     width: 100%;
   }
 
@@ -909,7 +901,6 @@ body {
     padding-top: 2%;
     padding-left: 5%;
     font-size: xx-large;
-    text-decoration: overline;
   }
 
   #fale-connosco-section {
@@ -919,7 +910,7 @@ body {
   .fale-connosco {
     display: flex;
     flex-direction: column;
-
+    min-height: 0;
   }
 
   .fale-connosco img {
@@ -1259,6 +1250,10 @@ body {
 
 @media (min-width: 482px) {
 
+  html {
+    scrollbar-width: none;
+  }
+
   nav {
     height: 61.5px;
   }
@@ -1329,49 +1324,24 @@ body {
 
 
   .navbar-logo-1 {
-    width: 87px;
-    padding-top: 13px;
-    padding-left: 28px;
+    width: 37vh;
+    padding-top: 1vh;
+    padding-left: 8vh;
     position: fixed;
-    right: 210px;
+    right: 0vh;
     z-index: 1000;
   }
 
-
-  .navbar-logo-2 {
-    width: 80px;
-    padding-top: 20px;
-    padding-left: 30px;
-    position: fixed;
-    right: 117px;
-    z-index: 1000;
-  }
-
-
-  .navbar-logo-3 {
-    width: 80px;
-    padding-top: 17px;
-    padding-left: 30px;
-    position: fixed;
-    right: 20px;
-    z-index: 1000;
-  }
-
-
-  .banner-wrapper {
-    margin-top: 1px;
+  #banner {
+    height: calc(100vh - 180px - 50px);
   }
 
   .banner {
-    background-image: url('images/banner_principal.jpg');
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: white;
-    z-index: 999;
-    background-color: black;
-    height: calc(100vh - 180px - 50px);
+    height: 78%;
+  }
+
+  .banner-text-container {
+    height: 30%;
   }
 
   .banner img {
@@ -1379,17 +1349,11 @@ body {
     max-width: 100%;
     max-height: 100%;
     width: 100%;
-    height: calc(100vh - 180px - 61.5px);
 
   }
 
   .banner-text {
     display: flex;
-    justify-content: space-evenly;
-    color: white;
-    height: 180px;
-    width: 100%;
-    align-items: start;
     background-image: linear-gradient(310deg, #3f7825 0%, #fdc516 100%);
   }
 
@@ -1436,6 +1400,7 @@ body {
     width: 100%;
     /* Ensures the link covers the full width of its parent */
     height: 100%;
+    border-right: groove;
   }
 
   .banner-text-2 {
@@ -1458,14 +1423,13 @@ body {
   .banner-text-3 {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding-top: 2%;
     padding-bottom: 3%;
     color: white;
     text-decoration: none;
     margin: 0;
     width: 100%;
     height: 100%;
+    border-left: groove;
   }
 
   .banner-text-3 a {
@@ -1522,64 +1486,53 @@ body {
   }
 
   #intro img {
-    max-width: 40%;
+    max-width: 50%;
     object-fit: cover;
-    object-position: center;
+    object-position: right;
   }
 
   .sobre-card {
     display: flex;
-    background-color: var(--secondary-color);
     height: calc(100vh - 3px - 61.5px);
-    background-image: url('images/whitebackgroundwithh.png');
+    background-color: white;
   }
 
   .sobre-card img {
-    max-width: 60%;
+    width: 50%;
   }
 
 
   .texto-intro {
     padding-top: 10%;
-    padding-bottom: 5%;
+    padding-bottom: 8%;
     padding-left: 9%;
-    padding-right: 19%;
+    padding-right: 6%;
     line-height: 1.5;
     margin: 0;
-    /* font-style: italic; */
     font-weight: 400;
-    /* background-image: url(images/blueback.webp); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     font-size: 1.3em;
     background-image: url(images/whitebackgroundwithhright.png);
+    background-position: right;
   }
 }
 
 .sobre-text {
-  padding-bottom: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
-  line-height: 1.5;
   margin: 3vh;
-  max-width: 33%;
-  /* background-image: url(images/blueback.webp); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url('images/whitebackgroundwithh.png');
+  max-width: 50%;
 }
 
 .sobre-text h2 {
-  font-size: xxx-large;
-  text-align: center;
-  text-decoration: overline;
+  font-size: xx-large;
+  text-align: center
 }
 
 .sobre-p {
   line-height: 1.5;
   font-size: medium;
+  padding: 1% 10% 1% 10%;
 }
 
 .hands {
@@ -1618,10 +1571,13 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 2%;
-  padding-bottom: 3%;
   line-height: 1.5;
   margin: 0;
-  background-image: url('images/whitebackgroundwithhright.png');
+  background: lightgrey;
+}
+
+.equipa-pos {
+  font-size: small;
 }
 
 .equipa-cards {
@@ -1632,13 +1588,10 @@ body {
 }
 
 .equipa-title {
-
-  align-items: center;
-  text-align: justify;
+  text-align: center;
   line-height: 1.5;
   margin: 0;
   font-size: xx-large;
-  text-decoration: overline;
   padding-left: 5vh;
 }
 
@@ -1667,7 +1620,7 @@ body {
   max-width: 100%;
   height: 150px;
   aspect-ratio: 1 / 1;
-  object-fit: cover;
+  object-fit: contain;
   margin-top: 10px;
   border-radius: 50%;
   max-width: 270px;
@@ -1684,22 +1637,23 @@ body {
 }
 
 #atividades {
-  background-image: url('images/greybackgroundwithhright.png');
-  padding-left: 8vh;
-  padding-right: 8vh;
+  padding-left: 12vh;
+  padding-right: 12vh;
+  background-color: white;
 }
 
 .atividades-cards {
   display: flex;
   flex-direction: row;
   overflow-y: auto;
-  gap: 30px;
+  gap: 50px;
   width: 100%;
   overscroll-behavior: contain;
   line-height: 1.5;
   background-blend-mode: multiply;
   overflow: hidden;
-  height: 50vh;
+  height: 47vh;
+  padding-top: 6vh;
 }
 
 .atividades-card-1-text {
@@ -1724,7 +1678,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(images/greybackgroundwithhright.png);
+
 }
 
 .atividades-card-1 {
@@ -1740,11 +1694,8 @@ body {
   width: 50%;
   list-style-type: none;
   line-height: 1.5;
-  border-radius: 5px;
   box-shadow: 0 1px 3px #afafaf;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
+  max-height: 42vh;
 }
 
 .atividades-card-1 li {
@@ -1766,18 +1717,19 @@ body {
   max-width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  height: 66%;
 }
 
 .atividades-card-1 p {
   max-width: 100%;
   line-height: 1.5;
   font-size: x-large;
+  font-weight: 600;
 }
 
 .atividades-descrption {
   margin: 0;
   flex-grow: 1;
+  text-align: center;
 }
 
 .atividades-card-1-text img {
@@ -1790,8 +1742,9 @@ body {
   text-align: justify;
   line-height: 1.5;
   margin: 0;
-  font-size: xxx-large;
-  text-decoration: overline;
+  font-size: xx-large;
+  padding: 2vh;
+  justify-content: center;
 }
 
 .atividades-card-container::-webkit-scrollbar {
@@ -1799,8 +1752,7 @@ body {
 }
 
 .atividades-card-container {
-
-  background-color: var(--secondary-color);
+  background-color: white;
 }
 
 
@@ -1815,7 +1767,7 @@ body {
 
 .atividades-card-container a {
   display: inline-block;
-  background-color: #007bff;
+  background-color: seagreen;
   color: white;
   padding: 5px 10px;
   cursor: pointer;
@@ -1843,7 +1795,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding-top: 5vh;
+  padding-top: 3vh;
 }
 
 .carousel-control {
@@ -1867,18 +1819,14 @@ body {
 }
 
 #servicos {
-  background-color: white;
+  background: lightgrey;
 }
 
 .servicos {
-  position: relative;
-  overflow: hidden;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   transition: transform 0.5s ease-in-out;
   scroll-snap-type: x mandatory;
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
   flex-wrap: nowrap;
   margin-left: 5%;
   margin-right: 5%;
@@ -1887,11 +1835,11 @@ body {
 }
 
 .servicos-cards {
-  display: flex;
-  gap: 66px;
-  width: 62%;
-  margin-bottom: 30px;
-  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4vh;
+  margin-bottom: 55px;
+  padding-top: 3vh;
 }
 
 .servicos-card-1 {
@@ -1901,46 +1849,43 @@ body {
   animation: slideIn 1s forwards;
   margin: 10px;
   border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  flex-shrink: 0;
+  flex-direction: column;
   scroll-snap-align: start;
-  width: 500px;
-  height: 400px;
+  width: 27vh;
+  height: 27vh;
   box-sizing: border-box;
   box-shadow: 0 1px 3px #afafaf;
-  /* background-image: url(images/blueback.webp); */
+  background-color: white;
   background-position: right;
-  justify-content: space-between;
+  justify-content: center;
   display: flex;
-  font-size: larger;
+  font-size: x-small;
 }
 
 .more-button {
   display: inline-block;
-  background-color: #007bff;
+  background-image: linear-gradient(310deg, #3f7825 0%, #fdc516 100%);
   color: white;
-  padding: 5px 10px;
+  padding: 5px 12px;
   cursor: pointer;
   border: none;
-  border-radius: 5px;
-  margin-bottom: 10%;
-  margin-left: 55%;
+  border-radius: 50%;
+  margin-bottom: 12%;
+  FONT-WEIGHT: 700;
+  MARGIN-LEFT: 20vh;
+  font-size: x-large;
 }
 
 .more-button:hover {
   background-color: #0056b3;
+  color: black;
 }
 
 .servicos-card-1 img {
-  max-width: 50%;
-  min-width: 50%;
-  min-height: 100%;
-  height: 100%;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  object-fit: cover;
-  object-position: center;
+  width: 6vh;
+  height: 6vh;
+  padding: 2vh;
+  margin-top: 1vh;
 }
 
 .servicos-card-1 p {
@@ -1950,23 +1895,22 @@ body {
 }
 
 .servicos-card-1 h3 {
-  max-width: 90%;
+  max-width: 100%;
   border-radius: 20px;
   line-height: 1.5;
-  padding-left: 20px;
+  padding-left: 6px;
+  font-size: medium;
+  margin: 0.5vh;
 }
 
 .servicos-title {
   justify-content: center;
   align-items: center;
-  padding-top: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
-  text-align: justify;
+  padding: 5vh;
+  text-align: center;
   line-height: 1.5;
   margin: 0;
-  font-size: xxx-large;
-  text-decoration: overline;
+  font-size: xx-large;
 }
 
 .servicos-description {
@@ -1994,14 +1938,14 @@ body {
 }
 
 #noticias {
-  background-color: var(--secondary-color);
+  background-color: white;
   width: 100%;
 }
 
 .noticias {
   position: relative;
   display: flex;
-  max-height: 80vh;
+  height: 65vh;
   overflow-y: auto;
   flex-direction: row;
   overflow-y: hidden;
@@ -2026,13 +1970,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 380px;
-  height: 530px;
+  width: 50vh;
+  max-height: 70vh;
   box-shadow: 0 1px 3px #afafaf;
-  /* background-image: url(images/blueback.webp); */
   background-position: right;
-  flex-shrink: 0;
-  /* Prevent cards from shrinking */
+  height: 58vh;
 }
 
 
@@ -2047,7 +1989,7 @@ body {
   height: 185px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  object-fit: cover;
+  object-fit: contain;
   height: 240px;
 }
 
@@ -2068,13 +2010,11 @@ body {
 .noticias-title {
   justify-content: center;
   align-items: center;
-  text-align: justify;
+  text-align: center;
   line-height: 1.5;
   margin: auto;
-  font-size: xxx-large;
-  text-decoration: overline;
-  padding: 2% 5%;
-  padding-bottom: 0;
+  font-size: xx-large;
+  padding: 3vh;
 }
 
 .noticia-date {
@@ -2083,6 +2023,7 @@ body {
 
 .news-button {
   text-decoration: none;
+  height: 50vh;
 }
 
 
@@ -2205,15 +2146,19 @@ body {
 }
 
 .servicos-page-title {
-  padding-top: 2%;
-  padding-left: 5%;
+  padding: 3vh;
   font-size: xx-large;
   text-decoration: overline;
 }
 
 .fale-connosco {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  margin-bottom: 8vh;
+  background-color: lightgrey;
 }
 
 .fale-connosco img {
@@ -2227,18 +2172,17 @@ body {
 .fale-connosco-title {
   display: flex;
   align-items: center;
-  text-align: justify;
+  text-align: center;
   line-height: 1.5;
   margin: 0;
-  font-size: xxx-large;
-  text-decoration: overline;
-  padding: 0% 8.5% 0px;
+  font-size: xx-large;
+  padding: 3% 8.5% 0px;
 }
 
 .fale-connosco-description {
   line-height: 1.5;
   font-size: x-large;
-  padding: 4% 8.5% 0px;
+  padding: 0% 8.5% 0px;
 }
 
 .giaae-text {
@@ -2357,17 +2301,6 @@ body {
   padding-top: 5%;
 }
 
-.noticias-title {
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  line-height: 1.5;
-  margin: auto;
-  font-size: xxx-large;
-  text-decoration: overline;
-  padding: 2% 5%;
-  padding-bottom: 0;
-}
 
 .noticia-date {
   font-size: x-large;
@@ -2618,10 +2551,9 @@ body {
 .contact-form {
   display: flex;
   flex-direction: column;
-  padding: 4% 8.5% 0px;
   line-height: 1.5;
   margin: 0;
-  width: 45%;
+  width: 37%;
   justify-content: center;
   align-items: stretch;
 }
@@ -2629,18 +2561,18 @@ body {
 .form-label {
   display: flex;
   flex-direction: column;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 }
 
 .submit-msg {
-  background-color: #007bff;
+  background-image: linear-gradient(310deg, #3f7825 0%, #fdc516 100%);
   font-weight: 200;
   font-size: 1em;
   color: white;
   padding: 2%;
   border-radius: 5px;
   border: none;
-  margin-top: 5%;
+  width: 13vh;
 }
 
 .form-msg {
@@ -2648,7 +2580,7 @@ body {
 }
 
 .form-email {
-  height: 2vh;
+  height: 3vh;
 }
 
 .recursos-page-title {
@@ -2670,4 +2602,30 @@ body {
   box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
   line-height: 1.5;
   height: 30vh;
+}
+
+.fale-padrao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+
+#fale-connosco-section {
+  min-height: 0;
+  background-color: lightgray;
+}
+
+.fale-padrao {
+  background-color: lightgray;
+}
+
+.fale-padrao img {
+  background-color: lightgray;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* Adjust scrollbar width */
 }
