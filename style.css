@@ -23,7 +23,8 @@ body {
   }
 
   nav {
-    height: 61.5px;
+    display: none;
+    height: 0px;
   }
 
   section {
@@ -60,45 +61,30 @@ body {
   }
 
   .navbar li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: larger;
+    width: 0;
   }
+
 
   .navbar li a:hover {
     background-color: silver;
   }
 
   .navbar-logo {
-    top: 19px;
-    width: 62px;
+    top: 9px;
+    width: 108px;
     position: fixed;
-    left: 11px;
+    left: 29px;
     z-index: 1000;
     padding-bottom: 28px;
   }
 
-
   .navbar-logo-0 {
-    width: 112px;
-    padding-top: 19px;
-    padding-left: 30px;
-    position: fixed;
-    left: 82px;
-    z-index: 1000;
+    width: 0;
   }
 
 
   .navbar-logo-1 {
-    width: 37vh;
-    padding-top: 1vh;
-    padding-left: 8vh;
-    position: fixed;
-    right: 0vh;
-    z-index: 1000;
+    width: 0;
   }
 
   #banner {
@@ -124,7 +110,6 @@ body {
   .banner-text {
     display: flex;
     background-image: linear-gradient(310deg, #3f7825 0%, #fdc516 100%);
-    font-size: small;
   }
 
 
@@ -141,7 +126,8 @@ body {
     align-items: center;
     width: 100%;
     /* Each child takes up 25% of the parent's width */
-
+    height: 100%;
+    font-size: smaller;
   }
 
   .banner-text a:hover,
@@ -249,16 +235,16 @@ body {
 
   #intro {
     display: flex;
+    flex-direction: column;
     line-height: 1.5;
     margin: 0;
     /* background-color: #89a7a7; */
-    flex-direction: column-reverse;
+    background-image: url('images/whitebackgroundwithh.png');
+    min-height: 28vh;
   }
 
   #intro img {
-    max-width: 100%;
-    object-fit: cover;
-    object-position: right;
+    display: none;
   }
 
   #sobre {
@@ -267,22 +253,22 @@ body {
 
   .sobre-card {
     display: flex;
+    flex-direction: column;
     height: calc(100vh - 3px - 61.5px);
     background-color: white;
-    flex-direction: column;
   }
 
   .sobre-card img {
-    width: 100%;
+    display: none;
   }
 
 
   .texto-intro {
-    padding-top: 10%;
-    padding-bottom: 8%;
-    padding-left: 9%;
-    padding-right: 6%;
-    line-height: 1.5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 53px;
+    line-height: 1.8;
     margin: 0;
     font-weight: 400;
     background-repeat: no-repeat;
@@ -295,7 +281,7 @@ body {
 
   .sobre-text {
     margin: 3vh;
-    max-width: 100%;
+    max-width: 99%;
   }
 
   .sobre-text h2 {
@@ -371,12 +357,11 @@ body {
 
   .equipa-card-1 {
     display: flex;
-    max-width: calc(51% - 29px);
     flex-direction: column;
     align-items: center;
     margin: 10px;
     border-radius: 20px;
-    width: 42%;
+    width: 37%;
   }
 
   .equipa-card-1 p {
@@ -413,8 +398,8 @@ body {
   }
 
   #atividades {
-    padding-left: 12vh;
-    padding-right: 12vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
     background-color: white;
   }
 
@@ -617,8 +602,8 @@ body {
 
   .servicos-cards {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 4vh;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0vh;
     margin-bottom: 55px;
     padding-top: 3vh;
   }
@@ -632,13 +617,13 @@ body {
     border-radius: 5px;
     flex-direction: column;
     scroll-snap-align: start;
-    width: 27vh;
-    height: 27vh;
+    width: 20vh;
+    height: 20vh;
     box-sizing: border-box;
     box-shadow: 0 1px 3px #afafaf;
     background-color: white;
     background-position: right;
-    justify-content: center;
+    justify-content: flex-end;
     display: flex;
     font-size: x-small;
   }
@@ -647,14 +632,14 @@ body {
     display: inline-block;
     background-image: linear-gradient(310deg, #3f7825 0%, #fdc516 100%);
     color: white;
-    padding: 5px 12px;
+    padding: 0px 6px;
     cursor: pointer;
     border: none;
     border-radius: 50%;
     margin-bottom: 12%;
-    FONT-WEIGHT: 700;
-    MARGIN-LEFT: 20vh;
-    font-size: x-large;
+    FONT-WEIGHT: 500;
+    MARGIN-LEFT: 14vh;
+    font-size: large;
   }
 
   .more-button:hover {
@@ -663,10 +648,10 @@ body {
   }
 
   .servicos-card-1 img {
-    width: 6vh;
-    height: 6vh;
-    padding: 2vh;
-    margin-top: 1vh;
+    width: 2vh;
+    height: 2vh;
+    padding: 1vh;
+    margin-top: 0vh;
   }
 
   .servicos-card-1 p {
@@ -676,11 +661,11 @@ body {
   }
 
   .servicos-card-1 h3 {
-    max-width: 100%;
+    max-width: 91%;
     border-radius: 20px;
     line-height: 1.5;
     padding-left: 6px;
-    font-size: medium;
+    font-size: small;
     margin: 0.5vh;
   }
 
@@ -751,7 +736,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50vh;
+    width: 30vh;
     max-height: 70vh;
     box-shadow: 0 1px 3px #afafaf;
     background-position: right;
@@ -929,7 +914,7 @@ body {
   .servicos-page-title {
     padding: 3vh;
     font-size: xx-large;
-    ;
+
   }
 
   .fale-connosco {
@@ -1246,7 +1231,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     box-shadow: 0 1px 3px #afafaf;
-    height: 110vh;
+    height: 100vh;
   }
 
   .bolsas-rows-2 {
@@ -1254,7 +1239,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     box-shadow: 0 1px 3px #afafaf;
-    height: 80vh;
+    height: 100vh;
     background-color: #FFE7E5;
   }
 
@@ -1338,7 +1323,7 @@ body {
     flex-direction: column;
     line-height: 1.5;
     margin: 0;
-    width: 37%;
+    width: 75%;
     justify-content: center;
     align-items: stretch;
   }
@@ -1411,11 +1396,7 @@ body {
   }
 
   .fale-padrao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 10vh;
+    display: none;
   }
 
   #fale-connosco-section {
@@ -1498,6 +1479,79 @@ body {
   .open-modal:hover {
     border-style: solid;
     color: black;
+  }
+
+  .main-noticia-card {
+    display: flex;
+    margin-right: 8%;
+    margin-left: 8%;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 5%;
+  }
+
+
+  .noticia-main-img {
+    background-image: url(images/noticia_dia_do_isec.jpg);
+    /* width: 200px; */
+    height: 190px;
+    object-fit: contain;
+    background-size: cover;
+  }
+
+  .noticia-main-text {
+
+    padding-right: 4%;
+    padding-left: 4%;
+    line-height: 1.7;
+  }
+
+  .noticia-main-p {
+    flex-direction: column;
+    left: 10px;
+    font-size: xx-large;
+    font-style: strong;
+  }
+
+  .noticia-main-date {
+
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    background: #dba628;
+    display: flex;
+
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .noticia-title-and-date {
+    flex-direction: row;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 2%;
+  }
+
+  .noticia-main-img2 {
+    background-image: url(images/webinar_img.jpg);
+    /* width: 200px; */
+    height: 280px;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .noticia-main-img3 {
+    background-image: url(images/noticia_arraial.jpg);
+    width: 1360px;
+    height: 250px;
+    object-fit: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 
@@ -1585,9 +1639,8 @@ body {
 
 
   .navbar-logo-1 {
-    width: 37vh;
-    padding-top: 1vh;
-    padding-left: 8vh;
+    width: 286px;
+    padding-top: 6px;
     position: fixed;
     right: 0vh;
     z-index: 1000;
@@ -1768,11 +1821,11 @@ body {
 
 
   .texto-intro {
-    padding-top: 10%;
-    padding-bottom: 8%;
-    padding-left: 9%;
-    padding-right: 6%;
-    line-height: 1.5;
+    padding-top: 250px;
+    padding-bottom: 200px;
+    padding-left: 150px;
+    padding-right: 153px;
+    line-height: 1.8;
     margin: 0;
     font-weight: 400;
     background-repeat: no-repeat;
@@ -2128,7 +2181,7 @@ body {
     box-shadow: 0 1px 3px #afafaf;
     background-color: white;
     background-position: right;
-    justify-content: center;
+    justify-content: flex-end;
     display: flex;
     font-size: x-small;
   }
@@ -2997,14 +3050,17 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-top: 5vh;
+    margin-bottom: 5%;
   }
+
 
   .noticia-main-img {
-
-    width: 100%;
+    background-image: url(images/noticia_dia_do_isec.jpg);
+    /* width: 200px; */
+    height: 190px;
+    object-fit: contain;
+    background-size: cover;
   }
-
-  .noticia-main-img img {}
 
   .noticia-main-text {
 
@@ -3041,4 +3097,24 @@ body {
     align-items: center;
     gap: 2%;
   }
+
+  .noticia-main-img2 {
+    background-image: url(images/webinar_img.jpg);
+    /* width: 200px; */
+    height: 280px;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .noticia-main-img3 {
+    background-image: url(images/noticia_arraial.jpg);
+    width: 1360px;
+    height: 250px;
+    object-fit: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
 }
