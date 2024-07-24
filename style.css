@@ -248,7 +248,7 @@ body {
   }
 
   #sobre {
-    min-height: calc(100vh - 64.5px);
+    min-height: calc(80vh);
   }
 
   .sobre-card {
@@ -553,7 +553,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding-top: 30px;
   }
 
   .carousel-buttons-s {
@@ -756,7 +755,6 @@ body {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     object-fit: contain;
-    height: 240px;
   }
 
   .noticias-card-1 .text {
@@ -1091,7 +1089,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 5%;
-    background-color: #FFE7E5;
+    background-color: lightgrey;
     line-height: 1.5;
   }
 
@@ -1101,7 +1099,7 @@ body {
   }
 
   .grsa-equipa {
-    background-color: #FFE7E5;
+    background-color: lightgrey;
   }
 
   .grsa-pillar-2 {
@@ -1797,6 +1795,7 @@ body {
     margin: 0;
     /* background-color: #89a7a7; */
     background-image: url('images/whitebackgroundwithh.png');
+    min-height: 24vh;
   }
 
   #intro img {
@@ -1806,12 +1805,11 @@ body {
   }
 
   #sobre {
-    min-height: calc(100vh - 64.5px);
+    min-height: 42vh;
   }
 
   .sobre-card {
     display: flex;
-    height: calc(100vh - 3px - 61.5px);
     background-color: white;
   }
 
@@ -1821,10 +1819,11 @@ body {
 
 
   .texto-intro {
-    padding-top: 250px;
-    padding-bottom: 200px;
-    padding-left: 150px;
-    padding-right: 153px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15vh;
+    padding-right: 15vh;
     line-height: 1.8;
     margin: 0;
     font-weight: 400;
@@ -1839,6 +1838,9 @@ body {
   .sobre-text {
     margin: 3vh;
     max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .sobre-text h2 {
@@ -2111,7 +2113,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding-top: 30px;
+
   }
 
   .carousel-buttons-s {
@@ -2294,11 +2296,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50vh;
-    max-height: 70vh;
+    width: 35vh;
+    max-height: 64vh;
     box-shadow: 0 1px 3px #afafaf;
     background-position: right;
-    height: 58vh;
+    height: 51vh;
   }
 
 
@@ -2310,11 +2312,10 @@ body {
 
   .noticias-card-1 img {
     width: 100%;
-    height: 185px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     object-fit: contain;
-    height: 240px;
+
   }
 
   .noticias-card-1 .text {
@@ -2649,7 +2650,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 5%;
-    background-color: #FFE7E5;
+    background-color: lightgrey;
     line-height: 1.5;
   }
 
@@ -2659,7 +2660,7 @@ body {
   }
 
   .grsa-equipa {
-    background-color: #FFE7E5;
+    background-color: lightgrey;
   }
 
   .grsa-pillar-2 {
@@ -2805,7 +2806,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 5%;
-    background-color: #FFE7E5;
+    background-color: lightgray;
     line-height: 1.5;
     height: 100%;
   }
@@ -3051,15 +3052,17 @@ body {
     justify-content: center;
     margin-top: 5vh;
     margin-bottom: 5%;
+    align-items: center;
   }
 
 
   .noticia-main-img {
-    background-image: url(images/noticia_dia_do_isec.jpg);
+
     /* width: 200px; */
-    height: 190px;
+    text-align: center;
     object-fit: contain;
-    background-size: cover;
+
+    max-width: 90%;
   }
 
   .noticia-main-text {
@@ -3075,6 +3078,7 @@ body {
     font-size: xx-large;
     font-style: strong;
   }
+
 
   .noticia-main-date {
 
@@ -3099,20 +3103,24 @@ body {
   }
 
   .noticia-main-img2 {
-    background-image: url(images/webinar_img.jpg);
-    /* width: 200px; */
-    height: 280px;
-    object-fit: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+    text-align: center;
+
+    object-fit: contain;
+
   }
 
   .noticia-main-img3 {
-    background-image: url(images/noticia_arraial.jpg);
-    height: 250px;
+    text-align: center;
     object-fit: cover;
     background-repeat: no-repeat;
   }
 
+  .voltar-noticias {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 10vh;
+    padding-right: 30vh;
+  }
 
 }
