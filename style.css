@@ -3109,10 +3109,8 @@ body {
 
   .noticia-main-img3 {
     background-image: url(images/noticia_arraial.jpg);
-    width: 1360px;
     height: 250px;
-    object-fit: contain;
-    background-size: contain;
+    object-fit: cover;
     background-repeat: no-repeat;
   }
 
