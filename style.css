@@ -1622,6 +1622,10 @@ body {
 
   .navbar li a:hover {
     background-color: silver;
+    transition-duration: 0.2s;
+    /* Adjust this value to slow down or speed up the animation */
+    transition-timing-function: ease-in-out;
+    border-radius: 5px;
   }
 
   .navbar-logo {
@@ -1697,6 +1701,7 @@ body {
   .banner-text-2 a:hover,
   .banner-text-3 a:hover {
     text-decoration: underline;
+
   }
 
   .banner-text h1 {
@@ -2107,6 +2112,7 @@ body {
   .atividades-card-container a:hover {
     border-style: solid;
     color: black;
+
   }
 
   .carousel {
@@ -2147,8 +2153,28 @@ body {
     left: 10px;
   }
 
+  .carousel-control.prev:hover {
+    left: 10px;
+
+    transform: scale(1.5);
+    transition-duration: 0.3s;
+    /* Adjust this value to slow down or speed up the animation */
+    transition-timing-function: ease-in-out;
+
+    /* Adjust the shadow properties as needed */
+  }
+
   .carousel-control.next {
     right: 10px;
+  }
+
+  .carousel-control.next:hover {
+    right: 10px;
+    transform: scale(1.5);
+    transition-duration: 0.3s;
+    /* Adjust this value to slow down or speed up the animation */
+    transition-timing-function: ease-in-out;
+
   }
 
   #servicos {
