@@ -954,7 +954,6 @@ body {
 
   .fale-connosco-description {
     line-height: 1.5;
-    font-size: x-large;
     padding: 0% 8.5% 0px;
   }
 
@@ -1659,6 +1658,8 @@ body {
     /* Adjust this value to slow down or speed up the animation */
     transition-timing-function: ease-in-out;
     border-radius: 5px;
+    font-size: 1.5em;
+
   }
 
   .navbar-logo {
