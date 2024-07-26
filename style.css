@@ -530,6 +530,8 @@ body {
     -ms-overflow-style: none;
   }
 
+
+
   .atividades-card-container a {
     display: inline-block;
     background-color: seagreen;
@@ -544,6 +546,7 @@ body {
   .atividades-card-container a:hover {
     border-style: solid;
     color: black;
+
   }
 
   .carousel {
@@ -914,9 +917,10 @@ body {
   }
 
   .servicos-page-title {
-    padding: 3vh;
+    padding: 3%;
     font-size: xx-large;
-
+    padding-bottom: 0;
+    color: seagreen;
   }
 
   .fale-connosco {
@@ -1079,7 +1083,7 @@ body {
   }
 
   .news-button:hover {
-    text-decoration: underline;
+    box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
   }
 
   /*GRSA*/
@@ -1310,7 +1314,7 @@ body {
     margin-bottom: 20px;
     box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
     line-height: 1.5;
-
+    border-radius: 5px;
   }
 
   .prom-gap-card-1 img {
@@ -2298,11 +2302,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 35vh;
+    width: 38vh;
     max-height: 64vh;
     box-shadow: 0 1px 3px #afafaf;
     background-position: right;
-    height: 51vh;
+    height: 54vh;
   }
 
 
@@ -2473,9 +2477,10 @@ body {
   }
 
   .servicos-page-title {
-    padding: 3vh;
+    padding: 3%;
     font-size: xx-large;
-
+    padding-bottom: 0;
+    color: seagreen;
   }
 
   .fale-connosco {
@@ -2635,10 +2640,17 @@ body {
 
   .news-button {
     text-decoration: none;
+    transition-duration: 0.3s;
+    /* Adjust this value to slow down or speed up the animation */
+    transition-timing-function: ease-in-out;
   }
 
   .news-button:hover {
-    text-decoration: underline;
+    box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    /* Adjust this value to slow down or speed up the animation */
+    transition-timing-function: ease-in-out;
   }
 
   /*GRSA*/
@@ -2869,7 +2881,7 @@ body {
     margin-bottom: 20px;
     box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
     line-height: 1.5;
-
+    border-radius: 5px;
   }
 
   .prom-gap-card-1 img {
@@ -3124,4 +3136,25 @@ body {
     padding-right: 30vh;
   }
 
+  .voltar-atividades {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 10vh;
+    padding-right: 30vh;
+    padding-top: 8vh;
+  }
+
+  .promocao-p {
+    padding-left: 3%;
+    padding-right: 3%;
+    line-height: 1.5;
+  }
+
+  .promocao-h3 {
+    padding-left: 3%;
+    padding-right: 3%;
+    line-height: 1.5;
+    font-size: x-large;
+    color: seagreen;
+  }
 }
