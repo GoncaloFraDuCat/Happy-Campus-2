@@ -833,6 +833,7 @@ body {
     color: white;
     text-align: center;
     border-top: 2px solid darkslategrey;
+    font-size: x-small;
   }
 
   .footer.container {
@@ -875,9 +876,32 @@ body {
     gap: 20px;
     margin-top: 3%;
     margin-left: 5%;
-    margin-right: 25%;
+    margin-right: 4%;
     margin-bottom: 20px;
-    box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
+  }
+
+  .opto-card-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 4%;
+    margin-bottom: 20px;
+  }
+
+  .opto-card-1 img {
+    max-width: 138px;
+    max-height: 261px;
+    min-width: 149px;
+    min-height: 149px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .opto-card-info {
+    font-size: small;
   }
 
   .gap-card-amb {
@@ -905,11 +929,12 @@ body {
   }
 
   .gap-card-1 img {
-    max-width: 250px;
-    max-height: 250px;
-    min-width: 249px;
-    min-height: 249px;
+    max-width: 138px;
+    max-height: 261px;
+    min-width: 149px;
+    min-height: 149px;
     object-fit: cover;
+    border-radius: 50%;
   }
 
   .gap-image {
@@ -971,7 +996,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-left: 5%;
-    padding-right: 25%;
+    padding-right: 5%;
     line-height: 1.5;
     margin: 0;
   }
@@ -1088,7 +1113,7 @@ body {
 
   .grsa-body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
   }
 
   .grsa-pillar-1 {
@@ -1250,346 +1275,354 @@ body {
   .giaae-pillar-1 {
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding: 0%;
     background-color: #FFE7E5;
     line-height: 1.5;
     height: 100%;
+    /* width: 25%; */
+    font-size: smaller;
+    padding-top: 6%;
+    padding-right: 2%;
+    padding-left: 2%;
   }
 
   .giaae-pillar-2 {
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    /* padding: 5%; */
     line-height: 1.5;
     height: 100%;
-  }
-
-  .giaae-body {
-    display: flex;
-    flex-direction: row;
-    height: 72vh;
-  }
-
-  .giaae-pillar-1 img {
-    width: 20vh;
-    border-radius: 5px;
-  }
-
-  .rem-gap-card-1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    margin-top: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 20px;
-
-    padding: 2%;
-    line-height: 1.5;
-    text-decoration: none;
-    color: black;
-  }
-
-  .rem-gap-card-1>a {
-    text-decoration: none;
-    color: black;
-  }
-
-  .prom-img {
-    width: 519px;
-    height: 600px;
-  }
-
-  .prom-gap-card-1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    margin-top: 3%;
-
-    margin-bottom: 20px;
-
-    line-height: 1.5;
-    border-radius: 5px;
-  }
-
-  .prom-gap-card-1 img {
-    min-height: 249px;
-    object-fit: cover;
-
-  }
-
-  .gap-card-info {
-    padding: 2%;
-  }
-
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.5;
-    margin: 0;
-    width: 75%;
-    justify-content: center;
-    align-items: stretch;
-  }
-
-  .form-label {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 5%;
-  }
-
-  .submit-msg {
-    background-image: linear-gradient(310deg, #3f7825 0%, #fdc516 100%);
-    font-weight: 200;
-    font-size: 1em;
-    color: white;
-    padding: 2%;
-    border-radius: 5px;
-    border: none;
-    width: 13vh;
-  }
-
-  .submit-msg:hover {
-    border-style: solid;
-    color: black;
-  }
-
-  .form-msg {
-    height: 18vh;
-  }
-
-  .form-email {
-    height: 3vh;
-  }
-
-  .recursos-page-title {
-    padding-top: 2%;
-    padding-left: 5%;
-    font-size: xx-large;
-
-  }
-
-
-  .recursos-card {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    margin-top: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 20px;
-    box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
-    line-height: 1.5;
-    height: 24vh;
-    width: 160vh;
-  }
-
-  .recursos-text {
-    padding-right: 3vh;
-  }
-
-  .recursos-text-box {
-    width: 100%;
-  }
-
-  .recursos-img {
-    background-color: #71dc09;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .fale-padrao {
-    display: none;
-  }
-
-  #fale-connosco-section {
-    min-height: 0;
-    background-color: lightgray;
-  }
-
-  .fale-padrao {
-    background-color: lightgray;
-  }
-
-  .fale-padrao img {
-    background-color: lightgray;
-  }
-
-  ::-webkit-scrollbar {
-    width: 0px;
-    /* Adjust scrollbar width */
-  }
-
-  .modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
-  }
-
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    /* Could be more or less, depending on screen size */
-  }
-
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .open-modal {
-    display: inline-block;
-    background-color: seagreen;
-    color: white;
-    padding: 5px 10px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-
-  }
-
-  .open-modal:hover {
-    border-style: solid;
-    color: black;
-  }
-
-  .main-noticia-card {
-    display: flex;
-    margin-right: 8%;
-    margin-left: 8%;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 5vh;
-    margin-bottom: 5%;
-  }
-
-
-  .noticia-main-img {
-    background-image: url(images/noticia_dia_do_isec.jpg);
-    /* width: 200px; */
-    height: 190px;
-    object-fit: contain;
-    background-size: cover;
-  }
-
-  .noticia-main-text {
-
-    padding-right: 4%;
-    padding-left: 4%;
-    line-height: 1.7;
-  }
-
-  .noticia-main-p {
-    flex-direction: column;
-    left: 10px;
-    font-size: xx-large;
-    font-style: strong;
-  }
-
-  .noticia-main-date {
-
-    width: 65px;
-    height: 65px;
-    text-align: center;
-    background: #dba628;
-    display: flex;
-
-    color: white;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
-  }
-
-  .noticia-title-and-date {
-    flex-direction: row;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    gap: 2%;
-  }
-
-  .noticia-main-img2 {
-    background-image: url(images/webinar_img.jpg);
-    /* width: 200px; */
-    height: 280px;
-    object-fit: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .noticia-main-img3 {
-    background-image: url(images/noticia_arraial.jpg);
-    width: 1360px;
-    height: 250px;
-    object-fit: contain;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-
-
-  .voltar-noticias {
-    display: flex;
-    justify-content: flex-end;
-    padding-bottom: 10vh;
-    padding-right: 30vh;
-  }
-
-  .voltar-atividades {
-    display: flex;
-    justify-content: flex-end;
-    padding-bottom: 10vh;
-    padding-right: 30vh;
-    padding-top: 8vh;
-  }
-
-  .promocao-p {
     padding-left: 5%;
     padding-right: 5%;
-    line-height: 1.5;
   }
+}
 
-  .promocao-h3 {
-    padding-left: 5%;
-    padding-right: 3%;
-    line-height: 1.5;
-    font-size: x-large;
-    color: seagreen;
-  }
+.giaae-body {
+  display: flex;
+  flex-direction: row;
+  height: 115vh;
+}
+
+.giaae-pillar-1 img {
+  width: 20vh;
+  border-radius: 5px;
+}
+
+.rem-gap-card-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 20px;
+
+  padding: 2%;
+  line-height: 1.5;
+  text-decoration: none;
+  color: black;
+}
+
+.rem-gap-card-1>a {
+  text-decoration: none;
+  color: black;
+}
+
+.prom-img {
+  width: 519px;
+  height: 600px;
+}
+
+.prom-gap-card-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-top: 3%;
+
+  margin-bottom: 20px;
+
+  line-height: 1.5;
+  border-radius: 5px;
+}
+
+.prom-gap-card-1 img {
+  min-height: 249px;
+  object-fit: cover;
+
+}
+
+.gap-card-info {
+  padding: 2%;
+  font-size: 0.8em
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  margin: 0;
+  width: 75%;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5%;
+}
+
+.submit-msg {
+  background-image: linear-gradient(310deg, #3f7825 0%, #fdc516 100%);
+  font-weight: 200;
+  font-size: 1em;
+  color: white;
+  padding: 2%;
+  border-radius: 5px;
+  border: none;
+  width: 13vh;
+}
+
+.submit-msg:hover {
+  border-style: solid;
+  color: black;
+}
+
+.form-msg {
+  height: 18vh;
+}
+
+.form-email {
+  height: 3vh;
+}
+
+.recursos-page-title {
+  padding-top: 2%;
+  padding-left: 5%;
+  font-size: xx-large;
+
+}
+
+
+.recursos-card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 20px;
+  box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
+  line-height: 1.5;
+  height: 24vh;
+  width: 160vh;
+}
+
+.recursos-text {
+  padding-right: 3vh;
+}
+
+.recursos-text-box {
+  width: 100%;
+}
+
+.recursos-img {
+  background-color: #71dc09;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fale-padrao {
+  display: none;
+}
+
+#fale-connosco-section {
+  min-height: 0;
+  background-color: lightgray;
+}
+
+.fale-padrao {
+  background-color: lightgray;
+}
+
+.fale-padrao img {
+  background-color: lightgray;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* Adjust scrollbar width */
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.open-modal {
+  display: inline-block;
+  background-color: seagreen;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+
+}
+
+.open-modal:hover {
+  border-style: solid;
+  color: black;
+}
+
+.main-noticia-card {
+  display: flex;
+  margin-right: 8%;
+  margin-left: 8%;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5vh;
+  margin-bottom: 5%;
+}
+
+
+.noticia-main-img {
+  background-image: url(images/noticia_dia_do_isec.jpg);
+  /* width: 200px; */
+  height: 190px;
+  object-fit: contain;
+  background-size: cover;
+}
+
+.noticia-main-text {
+
+  padding-right: 4%;
+  padding-left: 4%;
+  line-height: 1.7;
+}
+
+.noticia-main-p {
+  flex-direction: column;
+  left: 10px;
+  font-size: xx-large;
+  font-style: strong;
+}
+
+.noticia-main-date {
+
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  background: #dba628;
+  display: flex;
+
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+
+.noticia-title-and-date {
+  flex-direction: row;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+.noticia-main-img2 {
+  background-image: url(images/webinar_img.jpg);
+  /* width: 200px; */
+  height: 280px;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.noticia-main-img3 {
+  background-image: url(images/noticia_arraial.jpg);
+  width: 1360px;
+  height: 250px;
+  object-fit: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+.voltar-noticias {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 10vh;
+  padding-right: 30vh;
+}
+
+.voltar-atividades {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 10vh;
+  padding-right: 30vh;
+  padding-top: 8vh;
+}
+
+.promocao-p {
+  padding-left: 5%;
+  padding-right: 5%;
+  line-height: 1.5;
+}
+
+.promocao-h3 {
+  padding-left: 5%;
+  padding-right: 3%;
+  line-height: 1.5;
+  font-size: x-large;
+  color: seagreen;
 }
 
 /*----------------------------------------------------------------------------------------------*/
@@ -1658,7 +1691,7 @@ body {
     /* Adjust this value to slow down or speed up the animation */
     transition-timing-function: ease-in-out;
     border-radius: 5px;
-    font-size: 1.5em;
+
 
   }
 
@@ -2499,6 +2532,18 @@ body {
     box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
   }
 
+  .opto-card-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 25%;
+    margin-bottom: 20px;
+    box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
+  }
+
   .gap-card-amb {
     display: flex;
     flex-direction: row;
@@ -2516,6 +2561,14 @@ body {
   .gap-card-amb-info {}
 
   .gap-card-amb img {
+    max-width: 250px;
+    max-height: 250px;
+    min-width: 249px;
+    min-height: 249px;
+    object-fit: cover;
+  }
+
+  .opto-card-1 img {
     max-width: 250px;
     max-height: 250px;
     min-width: 249px;
