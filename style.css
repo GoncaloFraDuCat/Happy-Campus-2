@@ -1595,16 +1595,24 @@ body {
     display: flex;
     justify-content: flex-end;
     padding-bottom: 10vh;
-    padding-right: 30vh;
-    background-image: url(images/voltar-bot.png)
+    padding-right: 3vh;
+
   }
 
   .voltar-atividades {
     display: flex;
     justify-content: flex-end;
     padding-bottom: 10vh;
-    padding-right: 30vh;
+    padding-right: 3vh;
     padding-top: 8vh;
+  }
+
+  .voltar-button {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 10vh;
+    padding-right: 3vh;
+    text-decoration: none;
   }
 
   .promocao-p {
