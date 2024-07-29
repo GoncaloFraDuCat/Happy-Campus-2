@@ -18,9 +18,6 @@ body {
 
 @media (max-width: 482px) {
 
-  body {
-    margin-top: 10%;
-  }
 
   html {
     scrollbar-width: none;
@@ -1650,7 +1647,7 @@ body {
 
 @media (min-width: 482px) {
 
-  body {}
+
 
   html {
     scrollbar-width: none;
