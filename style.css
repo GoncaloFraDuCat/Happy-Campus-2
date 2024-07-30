@@ -93,7 +93,8 @@ body {
   }
 
   #banner {
-    height: calc(100vh - 180px - 50px);
+    height: 100vh;
+    width: 100%
   }
 
   .banner {
@@ -416,15 +417,16 @@ body {
     display: flex;
     flex-direction: row;
     overflow-y: auto;
-    gap: 50px;
-    width: 100%;
+    gap: 35px;
+    width: 65%;
     overscroll-behavior: contain;
     line-height: 1.5;
     background-blend-mode: multiply;
     overflow: hidden;
     height: 38vh;
     padding-top: 2vh;
-    padding-left: 14%;
+    padding-left: 20%;
+    padding-right: 20%;
   }
 
   .atividades-card-1-text {
@@ -601,6 +603,8 @@ body {
     background: lightgrey;
   }
 
+
+
   .servicos {
     display: flex;
     justify-content: center;
@@ -759,7 +763,7 @@ body {
 
   .noticias-card-1 img {
     width: 100%;
-    height: 185px;
+    height: 125px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     object-fit: contain;
@@ -822,11 +826,13 @@ body {
   }
 
   #scroll-to-top-button img {
-    width: 100%;
+    width: 65%;
     padding: 5px;
     min-height: auto;
-    background: black;
+    /* background: black; */
     border-radius: 35px;
+    background-color: rgb(55 55 55 / 70%);
+    margin-left: 78%;
   }
 
   /* FOOTER FOR LAST */
@@ -1596,6 +1602,7 @@ body {
     justify-content: flex-end;
     padding-bottom: 10vh;
     padding-right: 3vh;
+    background: transparent;
 
   }
 
@@ -1605,6 +1612,7 @@ body {
     padding-bottom: 10vh;
     padding-right: 3vh;
     padding-top: 8vh;
+    background: transparent;
   }
 
   .voltar-button {
@@ -1613,6 +1621,7 @@ body {
     padding-bottom: 10vh;
     padding-right: 3vh;
     text-decoration: none;
+    background: transparent;
   }
 
   .promocao-p {
@@ -3274,7 +3283,7 @@ body {
     justify-content: flex-end;
     padding-bottom: 10vh;
     padding-right: 30vh;
-
+    background: transparent;
   }
 
   .voltar-atividades {
@@ -3283,6 +3292,7 @@ body {
     padding-bottom: 10vh;
     padding-right: 30vh;
     padding-top: 8vh;
+    background: transparent;
   }
 
   .voltar-button {
@@ -3291,6 +3301,7 @@ body {
     padding-bottom: 10vh;
     padding-right: 30vh;
     text-decoration: none;
+    background: transparent;
   }
 
 
