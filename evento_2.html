@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Campus</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="images/ai-h-logo.png" type="image/x-icon">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/countup@2"></script>
+</head>
+
+
+
+
+<nav>
+  <a href="index.html">
+    <img src="images/HC-logo-black.png" alt="Logo" sizes="64x64" class="navbar-logo">
+  </a>
+  <ul class="navbar">
+    <li><a href="index.html#home">Home</a></li>
+    <li><a href="index.html#sobre">Sobre</a></li>
+    <li><a href="index.html#atividades">Atividades</a></li>
+    <li><a href="index.html#servicos">Serviços</a></li>
+    <li><a href="index.html#noticias">Notícias</a></li>
+    <li><a href="#sobre">Recursos</a>
+      <ul class="dropdown-menu">
+        <li><a href="webinars.html" class="nav-drop-link">Webinars</a></li>
+        <li><a href="flyers.html" class="nav-drop-link">Flyers</a></li>
+      </ul>
+    </li>
+    <li><a href="eventos.html">Eventos</a></li>
+
+  </ul>
+  <img src="images/logos.png" alt="Logo" class="navbar-logo-1">
+</nav>
+
+
+<h1 class="eventos-title">Saúde mental e bem-estar no Campus Académico do Lumiar - Desligar, descontrair, descansar... 3
+  D's para as férias
+</h1>
+<div class="evento-main-img">
+  <img src="images/noticias_conferencia.jpg" alt="Noticia 2" class="noticia-main-img">
+</div>
+
+<div class="evento-text">
+
+  <p>No âmbito do projeto "Happy Campus – I feel good here", no próximo dia 16 de julho, às 16h00, na sala D5, decorrerá
+    uma
+    conferência dirigida a docentes e não docentes do ISEC Lisboa e do ISTEC, com o tema "Desligar, descontrair,
+    descansar... 3 D's para as férias".
+  </p>
+
+  <p>A sessão contará com a presença da Doutora Rita Francisco, coordenadora do Mestrado Psicologia do Bem-estar e
+    Promoção
+    da Saúde na Universidade Católica Portuguesa. A moderação ficará a cargo da Doutora Sandra Almeida, Psicóloga no
+    Gabinete de Apoio Psicológico do ISEC Lisboa.
+  </p>
+
+
+
+</div>
+
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_iyeqkqsVlw" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+
+  </div>
+</div>
+
+
+<div class="evento-card-1">
+  <img src="images/sandra_almeida.png" alt="GAP">
+  <div class="evento-card-info">
+    <h3 class="staff-name"> Sandra Oliveira de Almeida </h3>
+    <p> Licenciada em Psicologia Clínica pela Universidade Lusófona. Mestre em Psicologia do Desenvolvimento
+      Profissional pela
+      Universidade de Évora e Doutorada em Psicologia do Trabalho e das Organizações pela Universidade de Évora.
+      Doutoranda em
+      Ciências Militares no Instituto Universitário Militar (IUM). Atualmente desempenha funções como psicóloga no
+      Gabinete de
+      Apoio Psicológico do ISEC Lisboa e na Secção de Apoio Psicopedagógico da Academia Militar do Exército. É docente e
+      investigadora na Academia Militar. </p>
+
+  </div>
+</div>
+
+<div class="evento-card-1">
+  <img src="images/" alt="GAP">
+  <div class="evento-card-info">
+    <h3 class="staff-name"> Rita Francisco </h3>
+    <p> Licenciada e Doutorada em Psicologia pela Universidade de Lisboa. É Professora Auxiliar na Faculdade de Ciências
+      Humanas
+      da Universidade Católica Portuguesa, onde coordena o Mestrado em Psicologia do Bem-estar e Promoção da Saúde e a
+      Pós-graduação sobre Sistema de Promoção e Proteção de Crianças e Jovens. Leciona também na licenciatura em
+      Psicologia.
+      Foi diretora fundadora do CRC-W: Católica Research Centre for Psychological, Family and Social Wellbeing
+      (2017-2023). Os
+      seus interesses de investigação incidem sobre temas diversos como perturbações alimentares, literacia em saúde,
+      bem-estar e (des)ajustamento de crianças e adolescentes em diferentes situações sociais e familiares. É consultora
+      da
+      Direção-Geral da Saúde na área da literacia em saúde e bem-estar. É especialista em Psicologia Clínica e da Saúde
+      pela
+      Ordem dos Psicólogos Portugueses. </p>
+
+  </div>
+</div>
+
+<div class="evento-text">
+  <p>INSCREVA-SE AQUI.</p>
+</div>
+
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('videoModal');
+
+  // Get the button that opens the modal
+  var btn = document.querySelector('.open-modal');
+
+  // Get the <span> element that closes the modal
+  var span = document.querySelector('.close');
+
+  // When the user clicks on the button, open the modal
+  btn.onclick = function () {
+    modal.style.display = 'block';
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+    modal.style.display = 'none';
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  }
+
+</script>
