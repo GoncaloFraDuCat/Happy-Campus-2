@@ -13,7 +13,7 @@
   <link rel="icon" href="images/ai-h-logo.png" type="image/x-icon">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <script src="https://cdn.jsdelivr.net/npm/countup@2"></script>
 </head>
 
 <body>
@@ -126,11 +126,17 @@
           dificuldades de alojamento, e a necessária capacidade de adaptação a meios sociais desconhecidos são so alguns
           dos
           fatores que contribuem para esta pandemia.</p>
+
+
+      </div>
+      <div class="counter-container">
+        <span class="counter" data-end="48">0</span>
       </div>
 
       <img src="images/sobre_2.jpg" alt="HCP" class="hands">
 
     </div>
+
 
     <!--
 
@@ -573,5 +579,28 @@
     style="opacity: 0; visibility: hidden;">
     <img src="images/upload2.png">
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const counterContainer = document.querySelector(".counter-container");
+
+      const observer = new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting) {
+          const counterElement = document.querySelector('.counter');
+          const options = {
+            duration: 2000, // Duration of the count up animation in ms
+            delay: 0, // Delay before starting the count up animation in ms
+          };
+
+          countUp(counterElement, options);
+
+          observer.unobserve(counterContainer); // Stop observing once done
+        }
+      });
+
+      observer.observe(counterContainer);
+    });
+  </script>
+
 
 </body>

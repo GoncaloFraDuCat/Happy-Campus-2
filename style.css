@@ -3378,4 +3378,19 @@ body {
     padding-right: 25%;
     line-height: 1.5;
   }
+
+  /* Assuming this is in a separate CSS file or correctly scoped */
+  .counter-container {
+    position: relative;
+
+    /* Adjust based on your needs */
+  }
+
+  .counter {
+    font-size: 48px;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out;
+
+    /* Ensure this is set to make the counter initially invisible */
+  }
 }

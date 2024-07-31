@@ -216,3 +216,30 @@ window.onclick = function(event) {
     modal.style.display = 'none';
   }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const counterContainer = document.querySelector(".counter-container");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const counterElement = entry.target.querySelector('.counter');
+        const options = {
+          decimal: '.2',
+        };
+
+        let demo = new CountUp(counterElement, 48, options);
+
+        if (!demo.error) {
+          demo.start();
+        } else {
+          console.error(demo.error);
+        }
+      }
+    });
+
+    observer.unobserve(entry.target); // Stop observing once done
+  });
+
+  observer.observe(counterContainer);
+});
