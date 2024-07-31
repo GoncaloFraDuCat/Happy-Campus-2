@@ -30,7 +30,12 @@
       <li><a href="#atividades">Atividades</a></li>
       <li><a href="#servicos">Serviços</a></li>
       <li><a href="#noticias">Notícias</a></li>
-      <li><a href="recursos.html">Recursos</a></li>
+      <li><a href="#home">Recursos</a>
+        <ul class="dropdown-menu">
+          <li><a href="webinars.html" class="nav-drop-link">Webinars</a></li>
+          <li><a href="flyers.html" class="nav-drop-link">Flyers</a></li>
+        </ul>
+      </li>
     </ul>
     <img src="images/logos.png" alt="Logo" class="navbar-logo-1">
   </nav>
@@ -77,7 +82,7 @@
 
 
   <section id="intro">
-    <img src="images/sobre_1.jpg" alt="Student Mental Health">
+    <img src="images/sobre_3.jpg" alt="Student Mental Health">
     <div class="intro-text">
 
       <h1 class=" texto-intro"> Happy Campus – I Feel Good Here
@@ -118,7 +123,20 @@
       <div class="sobre-text">
 
         <h2> Sobre o Projeto</h2>
+        <h1 class="sobre-number">48%</h1>
 
+        <p class="sobre-p">dos estudantes do ensino superior em Portugal apresentam sintomalogia grave
+          no foro psicológico.</p>
+
+        <p class="sobre-p-italic">Teixeira, C., Moreira, D. (2023) <i>Aplicação de Um Inventário de Saúde Mental à
+            População Universitária em Portugal.</i></p>
+
+        <p class="sobre-p">
+          Os fatores de stress a que os estudantes estão expostos podem desencadear
+          perturbações mentais dado tratar-se de uma população num período de grande
+          vulnerabilidade e maioritariamente numa faixa etária em que surgem, pela
+          primeira vez, muitas das perturbações mentais graves.
+        </p>
         <p class="sobre-p">Os dados disponíveis sugerem que os problemas de saúde mental afetam milhões de jovens em
           toda a Europa todos os anos.
           A entrada no ensino superior acarreta para muitos jovens o primeiro afastamento continuado do meio familiar,
@@ -127,35 +145,11 @@
           dos
           fatores que contribuem para esta pandemia.</p>
 
-
       </div>
-      <div class="counter-container">
-        <span class="counter" data-end="48">0</span>
-      </div>
-
       <img src="images/sobre_2.jpg" alt="HCP" class="hands">
 
     </div>
 
-
-    <!--
-
-      <div class='plano-de-acao'>
-          <h2> Plano de Ação Happy Campus </h2>
-
-        <div class='img-container'>
-          <img src="images/eixos-tematicos.png" alt="Student Mental Health">
-          <img src="images/model-stepped-care.png" alt="Student Mental Health">
-        </div>
-
-          <p> O Plano de Ação Happy Campus é anual (de Janeiro a Dezembro de cada ano) e o conjunto de
-              recursos materiais e financeiros a serem implementados para a sua execução é aprovado no
-              último trimestre de cada ano para a respetiva execução no ano seguinte.
-          </p>
-
-      </div>
-
-      -->
   </section>
 
   <div class='equipa'>
@@ -581,24 +575,32 @@
   </div>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const counterContainer = document.querySelector(".counter-container");
+    document.addEventListener('DOMContentLoaded', function () {
+      const h1Element = document.querySelector('#sobre h1');
+      const endPercentage = parseFloat(h1Element.textContent.slice(0, -1)); // Remove the '%' character and convert to float
 
-      const observer = new IntersectionObserver(entries => {
-        if (entries[0].isIntersecting) {
-          const counterElement = document.querySelector('.counter');
-          const options = {
-            duration: 2000, // Duration of the count up animation in ms
-            delay: 0, // Delay before starting the count up animation in ms
-          };
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            let currentPercentage = 0;
+            const increment = 1.5; // Adjust this value to control the speed of the count-up
+            const duration = 2000; // Total duration of the count-up in milliseconds
 
-          countUp(counterElement, options);
+            const intervalId = setInterval(() => {
+              if (currentPercentage >= endPercentage) {
+                clearInterval(intervalId);
+              } else {
+                currentPercentage += increment;
+                h1Element.textContent = `${Math.round(currentPercentage)}%`; // Update the percentage
+              }
+            }, duration / (endPercentage - currentPercentage));
 
-          observer.unobserve(counterContainer); // Stop observing once done
-        }
+            observer.unobserve(entry.target); // Stop observing once the count-up starts
+          }
+        });
       });
 
-      observer.observe(counterContainer);
+      observer.observe(document.querySelector('#sobre'));
     });
   </script>
 

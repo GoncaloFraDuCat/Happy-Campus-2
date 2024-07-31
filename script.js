@@ -201,10 +201,11 @@ var btn = document.querySelector('.open-modal');
 var span = document.querySelector('.close');
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = 'block';
+if (btn) {
+  btn.onclick = function() {
+    modal.style.display = 'block';
+  }
 }
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = 'none';
@@ -217,29 +218,32 @@ window.onclick = function(event) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  const counterContainer = document.querySelector(".counter-container");
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const counterElement = entry.target.querySelector('.counter');
-        const options = {
-          decimal: '.2',
-        };
 
-        let demo = new CountUp(counterElement, 48, options);
+    document.addEventListener('DOMContentLoaded', function () {
+      const h1Element = document.querySelector('#sobre h1');
+      const endPercentage = parseFloat(h1Element.textContent.slice(0, -1)); // Remove the '%' character and convert to float
 
-        if (!demo.error) {
-          demo.start();
-        } else {
-          console.error(demo.error);
-        }
-      }
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            let currentPercentage = 0;
+            const increment = 1; // Adjust this value to control the speed of the count-up
+            const duration = 2000; // Total duration of the count-up in milliseconds
+
+            const intervalId = setInterval(() => {
+              if (currentPercentage >= endPercentage) {
+                clearInterval(intervalId);
+              } else {
+                currentPercentage += increment;
+                h1Element.textContent = `${Math.round(currentPercentage)}%`; // Update the percentage
+              }
+            }, duration / (endPercentage - currentPercentage));
+
+            observer.unobserve(entry.target); // Stop observing once the count-up starts
+          }
+        });
+      });
+
+      observer.observe(document.querySelector('#sobre'));
     });
-
-    observer.unobserve(entry.target); // Stop observing once done
-  });
-
-  observer.observe(counterContainer);
-});
