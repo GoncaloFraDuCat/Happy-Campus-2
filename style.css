@@ -3312,6 +3312,7 @@ body {
     left: 10px;
     font-size: xx-large;
     font-style: strong;
+    width: 90%;
   }
 
 
@@ -3513,7 +3514,7 @@ body {
 
   .evento-card-1 img {
     max-width: 250px;
-    max-height: 250px;
+    max-height: 200px;
     min-width: 200px;
     min-height: 200px;
     object-fit: cover;
@@ -3524,7 +3525,8 @@ body {
   .evento-main-img {
     text-align: center;
     object-fit: contain;
-
+    max-height: 50vh;
+    max-width: 100%;
   }
 
   .evento-text {
@@ -3538,5 +3540,47 @@ body {
     padding-right: 3%;
     padding-top: 1%;
     padding-bottom: 1%;
+  }
+
+  #sandra-pic {
+    max-width: 250px;
+    max-height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
+    object-position: top;
+  }
+
+  .evento-text-last {
+    background-image: linear-gradient(310deg, #3f7825 0%, #fdc516 100%);
+    font-weight: 200;
+    font-size: 1em;
+    color: white;
+    padding: 1%;
+    border-radius: 5px;
+    border: none;
+    width: 20vh;
+    margin-left: 7%;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    font-weight: 500;
+  }
+
+  .evento-text-last a:hover {
+    color: black;
+  }
+
+  .evento-text-last a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #evento-1-inscreva {
+    display: flex;
+    padding-bottom: 2vh;
   }
 }
