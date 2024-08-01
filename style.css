@@ -1542,7 +1542,7 @@ body {
     border: none;
     border-radius: 5px;
     text-decoration: none;
-
+    max-width: 14vh;
   }
 
   .open-modal:hover {
@@ -1696,6 +1696,104 @@ body {
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 0;
+  }
+
+  .sobre-p-bullet {
+    line-height: 1.7;
+    font-size: 1em;
+    /* padding: 1% 3% 1% 3%; */
+    padding-top: 0%;
+    /* width: 94%; */
+    padding-left: 3%;
+    padding-right: 10%;
+  }
+
+  .evento-card-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 3%;
+    margin-left: 7%;
+    margin-right: 8%;
+    margin-bottom: 20px;
+  }
+
+  .evento-card-info {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  .evento-card-1 img {
+    max-width: 250px;
+    max-height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
+  }
+
+  .evento-main-img {
+    text-align: center;
+    object-fit: contain;
+    max-height: 50vh;
+    max-width: 100%;
+  }
+
+  .evento-text {
+    padding-right: 5%;
+    padding-left: 7%;
+    line-height: 1.7;
+  }
+
+  .eventos-title {
+    padding-left: 7%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  #sandra-pic {
+    max-width: 250px;
+    max-height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
+    object-position: top;
+  }
+
+  .evento-text-last {
+    background-image: linear-gradient(310deg, #3f7825 0%, #fdc516 100%);
+    font-weight: 200;
+    font-size: 1em;
+    color: white;
+    padding: 1%;
+    border-radius: 5px;
+    border: none;
+    width: 20vh;
+    margin-left: 7%;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    font-weight: 500;
+  }
+
+  .evento-text-last a:hover {
+    color: black;
+  }
+
+  .evento-text-last a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #evento-1-inscreva {
+    display: flex;
+    padding-bottom: 2vh;
   }
 
 }
@@ -3271,7 +3369,7 @@ body {
     border: none;
     border-radius: 5px;
     text-decoration: none;
-    max-width: 10vh;
+    max-width: 14vh;
   }
 
   .open-modal:hover {
@@ -3428,7 +3526,7 @@ body {
   }
 
   .sobre-number {
-    padding-left: 10%;
+    text-align: center;
     font-size: 4em;
     padding-bottom: 0;
     margin: 0;
@@ -3582,5 +3680,44 @@ body {
   #evento-1-inscreva {
     display: flex;
     padding-bottom: 2vh;
+  }
+
+  .sobre-p-centered {
+    line-height: 1.5;
+    font-size: medium;
+    padding: 1% 10% 1% 10%;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .recursos-flyer {
+    display: inline-block;
+    background-color: seagreen;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    max-width: 30vh;
+  }
+
+  .inscricoes-comp {
+    background-image: linear-gradient(310deg, #3f7825 0%, #fdc516 100%);
+    font-weight: 200;
+    font-size: 1em;
+    color: white;
+    padding: 1%;
+    border-radius: 5px;
+    border: none;
+    width: 25vh;
+
+  }
+
+  .inscricoes-div {
+    display: flex;
+    padding-left: 7%;
+    padding-bottom: 2vh;
+    margin-top: 2vh;
   }
 }
