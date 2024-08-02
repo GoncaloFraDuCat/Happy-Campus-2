@@ -247,3 +247,39 @@ window.onclick = function(event) {
 
       observer.observe(document.querySelector('#sobre'));
     });
+
+
+// Select all progress bars
+const progressBars = document.querySelectorAll(".progress");
+
+// Define the fill percentages for each progress bar
+const fillPercentages = [25, 50, 75, 100];
+
+let filledBars = Array(progressBars.length).fill(false); // Track which bars have been filled
+
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Function to handle scroll event
+function handleScroll() {
+  progressBars.forEach((bar, index) => {
+    if (!filledBars[index] && isInViewport(bar)) { // Check if the bar hasn't been filled and is in viewport
+      filledBars[index] = true; // Mark this bar as filled
+      bar.style.width = `${fillPercentages[index]}%`; // Update the width
+    }
+  });
+}
+
+// Listen for scroll events
+window.addEventListener("scroll", handleScroll);
+
+// Initial check in case the page is reloaded with a hash or the user navigates back
+handleScroll();
