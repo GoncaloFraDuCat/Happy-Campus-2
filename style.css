@@ -310,7 +310,6 @@ body {
   .sobre-p {
     line-height: 1.5;
     font-size: medium;
-    padding: 1% 10% 1% 10%;
   }
 
   .sobre-button {
@@ -1176,6 +1175,10 @@ body {
     ;
   }
 
+  .grsa-pillar-2 h3 {
+    color: seagreen;
+  }
+
   .grsa-button-1 {
     padding: 5%;
     margin-top: 5%;
@@ -1307,7 +1310,7 @@ body {
     padding: 0%;
     background-color: #FFE7E5;
     line-height: 1.5;
-    height: 100%;
+    height: 109%;
     /* width: 25%; */
     font-size: smaller;
     padding-top: 6%;
@@ -1341,10 +1344,11 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 2%;
+    padding-left: 5%;
     line-height: 1.5;
     text-decoration: none;
     color: black;
+    padding-right: 5%;
   }
 
   .rem-gap-card-1>a {
@@ -1379,6 +1383,11 @@ body {
   .gap-card-info {
     padding: 2%;
     font-size: 0.8em
+  }
+
+  .sport-card-info {
+    padding: 2%;
+    font-size: 1em
   }
 
   .contact-form {
@@ -1612,11 +1621,21 @@ body {
   .voltar-noticias {
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 10vh;
+    padding-bottom: 4vh;
     padding-right: 3vh;
     background: transparent;
 
   }
+
+  .voltar-giiae {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 3vh;
+    background: transparent;
+
+  }
+
+
 
   .voltar-noticias-img {
     background: transparent;
@@ -1811,7 +1830,7 @@ body {
     padding-right: 5%;
   }
 
-  .miti-gap-card-1 p {
+  .miti-gap-card-1 a {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1825,9 +1844,14 @@ body {
 
   }
 
+  .miti-text-h1 {
+    font-size: x-large;
+    color: seagreen;
+  }
+
   .rem-text-intro {
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
     line-height: 1.5;
   }
 
@@ -1835,6 +1859,11 @@ body {
     padding-left: 3%;
     line-height: 1.5;
     padding-right: 3%;
+  }
+
+  .rem-ul {
+    padding-left: 5%;
+
   }
 
   .navbar-hidden {
@@ -3225,6 +3254,17 @@ body {
     line-height: 1.5;
     text-decoration: none;
     color: black;
+  }
+
+  .sport-gap-card-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5%;
+    line-height: 1.5;
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
   }
 
   .rem-gap-card-1>a {
