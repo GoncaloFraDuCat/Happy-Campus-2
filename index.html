@@ -523,6 +523,10 @@
 
       </div>
     </div>
+    <div class="carousel-buttons-n">
+      <button class="carousel-control prev" id="noticias-prev">❮</button>
+      <button class="carousel-control next" id="noticias-next">❯</button>
+    </div>
 
 
 
@@ -619,6 +623,37 @@
       });
 
       observer.observe(document.querySelector('#sobre'));
+    });
+  </script>
+
+  <script>
+    const noticiasCarousel = document.querySelector('.noticias');
+    const noticiasPrevButton = document.getElementById('noticias-prev');
+    const noticiasNextButton = document.getElementById('noticias-next');
+
+    let scrollPerClickNoticias;
+    let currentScrollPositionNoticias = 0;
+
+    scrollPerClickNoticias = noticiasCarousel.offsetWidth / 3;
+
+    noticiasPrevButton.addEventListener('click', function () {
+      if (currentScrollPositionNoticias > 0) {
+        currentScrollPositionNoticias -= scrollPerClickNoticias;
+        noticiasCarousel.scrollTo({
+          left: currentScrollPositionNoticias,
+          behavior: 'smooth'
+        });
+      }
+    });
+
+    noticiasNextButton.addEventListener('click', function () {
+      if (currentScrollPositionNoticias < noticiasCarousel.scrollWidth - noticiasCarousel.offsetWidth) {
+        currentScrollPositionNoticias += scrollPerClickNoticias;
+        noticiasCarousel.scrollTo({
+          left: currentScrollPositionNoticias,
+          behavior: 'smooth'
+        });
+      }
     });
   </script>
 

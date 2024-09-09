@@ -597,6 +597,14 @@ body {
     padding-top: 3vh;
   }
 
+  .carousel-buttons-n {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 3vh;
+  }
+
   .carousel-control {
     position: static;
     background: transparent;
@@ -2488,6 +2496,15 @@ body {
     padding-top: 3vh;
   }
 
+  .carousel-buttons-n {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 3vh;
+  }
+
+
   .carousel-control {
     position: static;
     background: transparent;
@@ -2654,19 +2671,21 @@ body {
   .noticias {
     position: relative;
     display: flex;
-    height: 65vh;
+    height: 72vh;
     overflow-y: auto;
-    flex-direction: row;
+    flex-direction: column;
     overflow-y: hidden;
     overflow-x: hidden;
     justify-content: center;
+    padding-left: 5%;
+    margin-right: 5%;
   }
 
   .noticias-cards {
     display: flex;
     justify-content: space-around;
-    gap: 40px;
-    padding-top: 60px;
+    gap: 75px;
+
   }
 
   .noticias-card-1 {
@@ -2679,11 +2698,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 38vh;
+    width: 40vh;
     max-height: 64vh;
     box-shadow: 0 1px 3px #afafaf;
     background-position: right;
-    height: 54vh;
+    height: 56vh;
   }
 
 
