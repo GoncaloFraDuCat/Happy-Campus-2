@@ -3931,4 +3931,43 @@ body {
     padding-right: 3%;
     max-width: 70%;
   }
+
+
+  .container-ha {
+
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .ha_div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .ha_div_img {
+    width: 50%;
+    max-width: 50%;
+  }
+  
+  .ha_div_text{
+    width: 50%;
+    max-width: 50%;
+    padding-left: 3%;
+  }
+
+  .ha_div_text h1 {
+    font-size: large;
+    color: #1a3284;
+  }
+
+  .programa-img {
+    display: flex;
+    
+  }
+
+  .ha-img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
 }
