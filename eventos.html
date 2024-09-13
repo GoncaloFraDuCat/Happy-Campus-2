@@ -60,7 +60,8 @@
 
 
             <p class="noticia-subtext">
-              A Happy Arrival Week 2024 chegou em grande, com um programa cheio de energia, diversão e oportunidades para conheceres novas pessoas e aproveitar ao máximo a tua experiência no ISEC Lisboa!...
+              A Happy Arrival Week 2024 chegou em grande, com um programa cheio de energia, diversão e oportunidades
+              para conheceres novas pessoas e aproveitar ao máximo a tua experiência no ISEC Lisboa!...
             </p>
           </div>
         </div>
@@ -114,4 +115,41 @@
 
 
     </div>
+
   </div>
+  <div class="carousel-buttons-n">
+    <button class="carousel-control prev" id="noticias-prev">❮</button>
+    <button class="carousel-control next" id="noticias-next">❯</button>
+  </div>
+
+
+  <script>
+    const noticiasCarousel = document.querySelector('.noticias');
+    const noticiasPrevButton = document.getElementById('noticias-prev');
+    const noticiasNextButton = document.getElementById('noticias-next');
+
+    let scrollPerClickNoticias;
+    let currentScrollPositionNoticias = 0;
+
+    scrollPerClickNoticias = noticiasCarousel.offsetWidth / 3;
+
+    noticiasPrevButton.addEventListener('click', function () {
+      if (currentScrollPositionNoticias > 0) {
+        currentScrollPositionNoticias -= scrollPerClickNoticias;
+        noticiasCarousel.scrollTo({
+          left: currentScrollPositionNoticias,
+          behavior: 'smooth'
+        });
+      }
+    });
+
+    noticiasNextButton.addEventListener('click', function () {
+      if (currentScrollPositionNoticias < noticiasCarousel.scrollWidth - noticiasCarousel.offsetWidth) {
+        currentScrollPositionNoticias += scrollPerClickNoticias;
+        noticiasCarousel.scrollTo({
+          left: currentScrollPositionNoticias,
+          behavior: 'smooth'
+        });
+      }
+    });
+  </script>
