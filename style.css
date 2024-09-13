@@ -4051,6 +4051,19 @@ body {
     background-color: whitesmoke;
   }
 
+  .ha_div2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 5%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: whitesmoke;
+  }
+
   .ha_div_img {
     width: 50%;
     max-width: 50%;
