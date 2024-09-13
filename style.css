@@ -1886,6 +1886,109 @@ body {
     background-color: #ffffffb0;
   }
 
+  .container-ha {}
+
+  .ha_div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 5%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: whitesmoke;
+  }
+
+  .ha_div2 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 5%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: whitesmoke;
+  }
+
+  .ha_div_img {
+    width: 85%;
+    max-width: 95%;
+  }
+
+  .ha_div_text,
+  .ha_div_text2 {
+    width: 85%;
+    max-width: 95%;
+    font-family: sans-serif;
+    flex-grow: 1;
+    /* Allow text area to grow */
+  }
+
+
+
+  .ha_div_text h1 {
+    font-size: medium;
+    color: #1a3284;
+  }
+
+  .ha_div_text2 h1 {
+    font-size: medium;
+    color: #1a3284;
+  }
+
+  .ha_div_text p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .ha_div_text2 p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .programa-img {
+    display: flex;
+    transform: scale(2.2);
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+
+  .ha-img {
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height: auto;
+  }
+
+  .ha-img2 {
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height: auto;
+  }
+
+  .ha-evento-text {
+    font-family: sans-serif;
+    padding-top: 1%;
+    padding-left: 8%;
+    padding-right: 8%;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  .ha-pdf {
+    text-decoration: none;
+    color: #1a3284;
+    font-weight: bold;
+  }
+
+  .evento-main-img {
+    text-align: center;
+    object-fit: contain;
+  }
+
 }
 
 /*----------------------------------------------------------------------------------------------*/
@@ -1893,8 +1996,7 @@ body {
 /*----------------------------------------------------------------------------------------------*/
 
 
-@media (max-width: 1500px) {
-
+@media (min-width: 483px) and (max-width: 1500px) {
 
 
   html {
@@ -6078,6 +6180,19 @@ body {
   }
 
   .ha_div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 5%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: whitesmoke;
+  }
+
+  .ha_div2 {
     display: flex;
     flex-direction: row;
     width: 100%;
