@@ -288,7 +288,6 @@
           <a href="promocao.html">Saber Mais</a>
         </div>
 
-
         <div class='atividades-card-1'>
           <img src="images/mitigacao.jpg" alt="Mitigação">
           <p> Mitigação </p>
@@ -656,6 +655,203 @@
       }
     });
   </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const atividadesSlider = document.querySelector('.atividades-cards');
+      let isDownAtividades = false;
+      let startXAtividades;
+      let startYAtividades;
+      let scrollLeftAtividades;
+      let velocityAtividades = 0;
+
+      atividadesSlider.addEventListener('mousedown', startDragAtividades);
+      atividadesSlider.addEventListener('touchstart', startDragAtividades);
+
+      function startDragAtividades(e) {
+        isDownAtividades = true;
+        atividadesSlider.classList.add('active');
+
+        startXAtividades = e.type === 'mousedown' ? e.pageX : e.touches[0].clientX;
+        startYAtividades = e.type === 'mousedown' ? e.pageY : e.touches[0].clientY;
+        scrollLeftAtividades = atividadesSlider.scrollLeft;
+
+        velocityAtividades = 0;
+
+        // Don't prevent default here
+      }
+
+      atividadesSlider.addEventListener('mouseleave', stopDragAtividades);
+      atividadesSlider.addEventListener('mouseup', stopDragAtividades);
+      atividadesSlider.addEventListener('touchend', stopDragAtividades);
+
+      function stopDragAtividades(e) {
+        isDownAtividades = false;
+        atividadesSlider.classList.remove('active');
+      }
+
+      atividadesSlider.addEventListener('mousemove', dragAtividades);
+      atividadesSlider.addEventListener('touchmove', dragAtividades);
+
+      function dragAtividades(e) {
+        if (!isDownAtividades) return;
+
+        const x = e.type === 'mousemove' ? e.pageX : e.touches[0].clientX;
+        const y = e.type === 'mousemove' ? e.pageY : e.touches[0].clientY;
+
+        const dx = x - startXAtividades;
+        const dy = y - startYAtividades;
+
+        velocityAtividades -= dx / 10;
+
+        atividadesSlider.scrollLeft += velocityAtividades;
+
+        if (atividadesSlider.scrollLeft < 0) atividadesSlider.scrollLeft = 0; if (atividadesSlider.scrollLeft >
+          atividadesSlider.scrollWidth - atividadesSlider.clientWidth) {
+          atividadesSlider.scrollLeft = atividadesSlider.scrollWidth - atividadesSlider.clientWidth;
+        }
+
+        startXAtividades = x;
+        startYAtividades = y;
+
+        // Don't prevent default here either
+      }
+
+      function animateScrollAtividades() {
+        if (!isDownAtividades && Math.abs(velocityAtividades) > 0.01) {
+          atividadesSlider.scrollLeft += velocityAtividades;
+          velocityAtividades *= 0.95;
+
+          if (atividadesSlider.scrollLeft < 0) atividadesSlider.scrollLeft = 0; if (atividadesSlider.scrollLeft >
+            atividadesSlider.scrollWidth - atividadesSlider.clientWidth) {
+            atividadesSlider.scrollLeft = atividadesSlider.scrollWidth - atividadesSlider.clientWidth;
+          }
+
+          requestAnimationFrame(() => animateScrollAtividades());
+        } else {
+          velocityAtividades = 0;
+        }
+      }
+
+      function startInertiaAtividades() {
+        animateScrollAtividades();
+      }
+
+      atividadesSlider.addEventListener('touchend', startInertiaAtividades);
+      atividadesSlider.addEventListener('mouseup', startInertiaAtividades);
+
+      // Add event listeners for individual card navigation
+      const cards = atividadesSlider.querySelectorAll('.card-container');
+      cards.forEach((card, index) => {
+        card.addEventListener('click', () => {
+          const link = card.querySelector('.news-button');
+          if (link) {
+            window.location.href = link.getAttribute('href');
+          }
+        });
+      });
+
+    });
+  </script>
+
+
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const noticiasSlider = document.querySelector('.noticias');
+      let isDownNoticias = false;
+      let startXNoticias;
+      let startYNoticias;
+      let scrollLeftNoticias;
+      let velocityNoticas = 0;
+
+      noticiasSlider.addEventListener('mousedown', startDragNoticias);
+      noticiasSlider.addEventListener('touchstart', startDragNoticias);
+
+      function startDragNoticias(e) {
+        isDownNoticias = true;
+        noticiasSlider.classList.add('active');
+
+        startXNoticias = e.type === 'mousedown' ? e.pageX : e.touches[0].clientX;
+        startYNoticias = e.type === 'mousedown' ? e.pageY : e.touches[0].clientY;
+        scrollLeftNoticias = noticiasSlider.scrollLeft;
+
+        velocityNoticas = 0;
+
+        // Don't prevent default here
+      }
+
+      noticiasSlider.addEventListener('mouseleave', stopDragNoticias);
+      noticiasSlider.addEventListener('mouseup', stopDragNoticias);
+      noticiasSlider.addEventListener('touchend', stopDragNoticias);
+
+      function stopDragNoticias(e) {
+        isDownNoticias = false;
+        noticiasSlider.classList.remove('active');
+      }
+
+      noticiasSlider.addEventListener('mousemove', dragNoticias);
+      noticiasSlider.addEventListener('touchmove', dragNoticias);
+
+      function dragNoticias(e) {
+        if (!isDownNoticias) return;
+
+        const x = e.type === 'mousemove' ? e.pageX : e.touches[0].clientX;
+        const y = e.type === 'mousemove' ? e.pageY : e.touches[0].clientY;
+
+        const dx = x - startXNoticias;
+        const dy = y - startYNoticias;
+
+        velocityNoticas -= dx / 10;
+
+        noticiasSlider.scrollLeft += velocityNoticas;
+
+        if (noticiasSlider.scrollLeft < 0) noticiasSlider.scrollLeft = 0;
+        if (noticiasSlider.scrollLeft > noticiasSlider.scrollWidth - noticiasSlider.clientWidth) {
+          noticiasSlider.scrollLeft = noticiasSlider.scrollWidth - noticiasSlider.clientWidth;
+        }
+
+        startXNoticias = x;
+        startYNoticias = y;
+
+        // Don't prevent default here either
+      }
+
+      function animateScrollNoticias() {
+        if (!isDownNoticias && Math.abs(velocityNoticas) > 0.01) {
+          noticiasSlider.scrollLeft += velocityNoticas;
+          velocityNoticas *= 0.95;
+
+          if (noticiasSlider.scrollLeft < 0) noticiasSlider.scrollLeft = 0;
+          if (noticiasSlider.scrollLeft > noticiasSlider.scrollWidth - noticiasSlider.clientWidth) {
+            noticiasSlider.scrollLeft = noticiasSlider.scrollWidth - noticiasSlider.clientWidth;
+          }
+
+          requestAnimationFrame(() => animateScrollNoticias());
+        } else {
+          velocityNoticas = 0;
+        }
+      }
+
+      function startInertiaNoticias() {
+        animateScrollNoticias();
+      }
+
+      noticiasSlider.addEventListener('touchend', startInertiaNoticias);
+      noticiasSlider.addEventListener('mouseup', startInertiaNoticias);
+
+      // Add event listeners for individual card navigation
+      const cards = noticiasSlider.querySelectorAll('.news-button');
+      cards.forEach((card, index) => {
+        card.addEventListener('click', () => {
+          window.location.href = card.getAttribute('href');
+        });
+      });
+
+    });
+  </script>
+
 
 
 </body>
