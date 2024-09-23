@@ -63,6 +63,7 @@ body {
 
   .navbar li a {
     width: 0;
+    font-weight: 500;
   }
 
 
@@ -791,7 +792,6 @@ body {
 
   .noticias-card-1 img {
     width: 100%;
-    height: 125px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     object-fit: contain;
@@ -800,7 +800,7 @@ body {
   .noticias-card-1 .text {
     padding: 0px 10px;
     background: white;
-    height: 100%;
+    height: 50%;
   }
 
   .noticia-subtext {
@@ -1396,7 +1396,8 @@ body {
 
   .sport-card-info {
     padding: 2%;
-    font-size: 1em
+    font-size: 1em;
+
   }
 
   .contact-form {
@@ -1467,11 +1468,25 @@ body {
     width: 100%;
   }
 
-  .recursos-img {
+  .recursos-img-1 {
+    background-image: url(images/250_flyer_digital_mockup_imagem.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #71dc09;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 30%;
+  }
+  .recursos-img-2 {
+    background-image: url(images/flyer-metodo-estudo-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #71dc09;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
   }
 
   .fale-padrao {
@@ -2049,6 +2064,7 @@ body {
     text-decoration: none;
     font-size: larger;
     background-color: transparent;
+    font-weight: 500;
   }
 
   .navbar li a:hover {
@@ -2094,6 +2110,7 @@ body {
 
   .banner {
     height: 83%;
+    min-height: unset !important;
   }
 
   .banner-text-container {
@@ -2823,7 +2840,7 @@ body {
   .noticias-card-1 .text {
     padding: 10px 25px;
     background: white;
-    height: 100%;
+    height: 55%;
   }
 
   .noticias-card-1 p {
@@ -2841,7 +2858,7 @@ body {
     line-height: 1.5;
     margin: auto;
     font-size: xx-large;
-    padding: 3vh;
+    padding-top: 3vh;
   }
 
   .noticia-date {
@@ -3472,7 +3489,7 @@ body {
   .recursos-card {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 60px;
     margin-top: 3%;
     margin-left: 5%;
     margin-right: 5%;
@@ -3489,14 +3506,49 @@ body {
 
   .recursos-text-box {
     width: 100%;
+
   }
 
-  .recursos-img {
+  .recursos-img-1 {
+    background-image: url(images/250_flyer_digital_mockup_imagem.jpg);
+    background-size: contain
+    ;
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: #71dc09;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 30%;
+    height: 30vh;
   }
+  .recursos-img-2 {
+    background-image: url(images/flyer-metodo-estudo-img.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #71dc09;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 30vh;
+  }
+
+  .webinar-img-1 {
+    background-image: url(images/250_webinar.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #71dc09;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 30vh;
+  }
+
 
   .fale-padrao {
     display: flex;
@@ -3517,6 +3569,7 @@ body {
 
   .fale-padrao img {
     background-color: lightgray;
+    height: 10vh;
   }
 
   ::-webkit-scrollbar {
@@ -4141,6 +4194,12 @@ body {
     text-align: center;
     object-fit: contain;
   }
+
+  .sport-card-info {
+    padding: 2%;
+    font-size: 1em;
+
+  }
 }
 
 
@@ -4203,6 +4262,7 @@ body {
     text-decoration: none;
     font-size: larger;
     background-color: transparent;
+    font-weight: 500;
   }
 
   .navbar li a:hover {
@@ -4248,6 +4308,8 @@ body {
 
   .banner {
     height: 83%;
+    min-height: unset !important;
+
   }
 
   .banner-text-container {
@@ -4934,7 +4996,6 @@ body {
     justify-content: center;
     padding-left: 5%;
     margin-right: 5%;
-    pointer-events: none;
   }
 
   .noticias-cards {
@@ -4942,8 +5003,7 @@ body {
     justify-content: space-around;
     gap: 75px;
     touch-action: pan-x;
-    overflow: scroll;
-    pointer-events: none;
+
 
   }
 
@@ -4958,10 +5018,12 @@ body {
     flex-direction: column;
     align-items: center;
     width: 40vh;
-    max-height: 64vh;
+    max-height: 75vh;
     box-shadow: 0 1px 3px #afafaf;
     background-position: right;
-    height: 56vh;
+    height: 25vh;
+    overflow: hidden; /* Add this line */
+
   }
 
 
@@ -4973,18 +5035,18 @@ body {
 
   .noticias-card-1 img {
     width: 100%;
-    height: 125px;
+    height: 200px;
 
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    object-fit: contain;
+    object-fit: cover;
 
   }
 
   .noticias-card-1 .text {
     padding: 10px 25px;
     background: white;
-    height: 100%;
+    height: 107%;
   }
 
   .noticias-card-1 p {
@@ -5652,12 +5714,47 @@ body {
     width: 100%;
   }
 
-  .recursos-img {
+  .recursos-img-1 {
+    background-image: url(images/250_flyer_digital_mockup_imagem.jpg);
+    background-size: contain
+    ;
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: #71dc09;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 24%;
+    height: 100%;
   }
+  .recursos-img-2 {
+    background-image: url(images/flyer-metodo-estudo-img.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #71dc09;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24%;
+    height: 100%;
+  }
+
+  .webinar-img-1 {
+    background-image: url(images/250_webinar.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #71dc09;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 30vh;
+  }
+
+
 
   .fale-padrao {
     display: flex;
@@ -5678,6 +5775,7 @@ body {
 
   .fale-padrao img {
     background-color: lightgray;
+    height: 10vh;
   }
 
   ::-webkit-scrollbar {
