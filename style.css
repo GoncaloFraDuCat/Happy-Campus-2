@@ -5021,7 +5021,7 @@ body {
     max-height: 75vh;
     box-shadow: 0 1px 3px #afafaf;
     background-position: right;
-    height: 25vh;
+    height: 50vh;
     overflow: hidden; /* Add this line */
 
   }
@@ -5596,6 +5596,7 @@ body {
     line-height: 1.5;
     text-decoration: none;
     color: black;
+    padding: 1%;
   }
 
   .sport-gap-card-1 {
@@ -5750,8 +5751,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
-    height: 30vh;
+    width: 40%;
+    height: 25vh;
+    max-height: 100%;
   }
 
 
@@ -5968,14 +5970,14 @@ body {
 
   .gri-contactos {
     list-style: none;
-    padding-left: 3%;
+    padding-left: 5%;
   }
 
   .gri-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 3%;
+    padding-left: 5%;
     padding-right: 25%;
     line-height: 1.5;
   }
