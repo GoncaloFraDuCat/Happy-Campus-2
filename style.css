@@ -6054,6 +6054,7 @@ body {
   .navbar .nav-drop-link {
     padding: 5%;
     background-color: transparent;
+    text-align: left;
   }
 
   .sobre-p-bullet {
