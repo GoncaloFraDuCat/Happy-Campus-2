@@ -3768,14 +3768,13 @@ body {
 
   .gri-contactos {
     list-style: none;
-    padding-left: 3%;
+    padding-left: 0%;
   }
 
   .gri-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 3%;
     padding-right: 25%;
     line-height: 1.5;
   }
@@ -5995,14 +5994,13 @@ body {
 
   .gri-contactos {
     list-style: none;
-    padding-left: 5%;
+    padding-left: 0%;
   }
 
   .gri-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 5%;
     padding-right: 25%;
     line-height: 1.5;
   }
