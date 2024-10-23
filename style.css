@@ -6444,5 +6444,30 @@ body {
     cursor: pointer;
   }
 
+  .opto-text {
+    font-size: medium;
+    padding-left: 5%;
+        padding-right: 25%;
+        line-height: 1.5;
+        margin: 0;
+  }
+
+  .opto-button {
+    margin-left: 5%;
+    margin-top: 1%;
+    display: inline-block;
+    background-color: seagreen;
+    color: white;
+    padding: 7px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .opto-text h4 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 
 }
