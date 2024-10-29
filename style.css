@@ -2037,6 +2037,58 @@ body {
     padding-bottom: 0;
   }
 
+  .ev-5-sessao{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom-style: solid;
+    border-bottom-color: #888;
+    font-weight: bold;
+    font-size: small;
+    padding: 0.5%;
+  }
+
+  .evento-5-container{
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 1.5em;
+  }
+
+  .evento_5_staff {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 5%;
+  }
+
+  .evento_5_staff_box{
+
+  }
+
+  .evento_5_staff img {
+    width: 32vh;
+    border-radius: 10px;
+  }
+
+  .inscricoes-evento-5 {
+    background-image: linear-gradient(310deg, #3f7825 0%, #fdc516 100%);
+    font-weight: 300;
+    font-size: 1em;
+    color: white;
+    padding: 1%;
+    border-radius: 5px;
+    border: none;
+    width: 22vh;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 3%;
+  }
+
+  .inscricoes-evento-5-a {
+    text-decoration: none;
+  }
+
+
 }
 
 /*----------------------------------------------------------------------------------------------*/
@@ -3750,7 +3802,6 @@ body {
     display: flex;
     justify-content: flex-end;
     padding-bottom: 10vh;
-    padding-right: 30vh;
     background: transparent;
   }
 
@@ -4275,6 +4326,58 @@ body {
     margin-bottom: 0;
     padding-bottom: 0;
   }
+
+  .ev-5-sessao{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom-style: solid;
+    border-bottom-color: #888;
+    font-weight: bold;
+    font-size: small;
+    padding: 0.5%;
+  }
+
+  .evento-5-container{
+    margin-left: 9%;
+    margin-right: 9%;
+    line-height: 1.5em;
+  }
+
+  .evento_5_staff {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-top: 5%;
+  }
+
+  .evento_5_staff_box{
+
+  }
+
+  .evento_5_staff img {
+    width: 32vh;
+    border-radius: 10px;
+  }
+
+  .inscricoes-evento-5 {
+    background-image: linear-gradient(310deg, #3f7825 0%, #fdc516 100%);
+    font-weight: 300;
+    font-size: 1em;
+    color: white;
+    padding: 1%;
+    border-radius: 5px;
+    border: none;
+    width: 22vh;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 3%;
+  }
+
+  .inscricoes-evento-5-a {
+    text-decoration: none;
+  }
+
 }
 
 
@@ -6001,7 +6104,6 @@ body {
     display: flex;
     justify-content: flex-end;
     padding-bottom: 10vh;
-    padding-right: 30vh;
     background: transparent;
   }
 
@@ -6520,5 +6622,61 @@ body {
     margin-bottom: 0;
     padding-bottom: 0;
   }
+
+  .ev-5-sessao{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom-style: solid;
+    border-bottom-color: #888;
+    font-weight: 500;
+    font-size: small;
+    padding: 0.5%;
+    font-weight: bold;
+  }
+
+  .evento-5-container{
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 1.5em;
+  }
+
+  .evento_5_staff {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-top: 5%;
+  }
+
+  .evento_5_staff_box{
+
+  }
+
+  .evento_5_staff img {
+    width: 25vh;
+    border-radius: 10px;
+  }
+
+  .inscricoes-evento-5 {
+    background-image: linear-gradient(310deg, #3f7825 0%, #fdc516 100%);
+    font-weight: 200;
+    font-size: 1em;
+    color: white;
+    padding: 1%;
+    border-radius: 5px;
+    border: none;
+    width: 22vh;
+    text-align: center;
+    text-decoration-line: none;
+  }
+
+  .inscricoes-evento-5-a {
+    text-decoration: none;
+  }
+
+  .evento-5-main-img{
+    max-width: 100%
+  }
+
 
 }
