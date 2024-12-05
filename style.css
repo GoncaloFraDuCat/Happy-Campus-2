@@ -99,6 +99,7 @@ body {
 
   .banner {
     height: 83%;
+    min-height: auto !important;
   }
 
   .banner-text-container {
@@ -804,7 +805,7 @@ body {
   }
 
   .noticias-card-1 .text {
-    padding: 0px 10px;
+    padding: 0px 7px;
     background: white;
     height: 50%;
   }
@@ -2878,8 +2879,7 @@ body {
   .noticias {
     position: relative;
     display: flex;
-    height: 75vh;
-    overflow-y: auto;
+    height: 83vh;
     flex-direction: column;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -2910,7 +2910,7 @@ body {
     max-height: 64vh;
     box-shadow: 0 1px 3px #afafaf;
     background-position: right;
-    height: 56vh;
+    height: 60vh;
   }
 
 
@@ -4385,6 +4385,92 @@ body {
     text-decoration: none;
   }
 
+  .recursos-card-list {
+    margin-bottom: 10vh;
+  }
+
+  .news_media_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5vh 60vh 5vh 10vh;
+    gap: 6%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .inscricoes-evento-5-a {
+    text-decoration: none;
+  }
+
+  .evento-5-main-img{
+    max-width: 100%
+  }
+
+  
+  .news_media_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 2vh 60vh 5vh 10vh;
+    gap: 15% 5%;
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+  }
+
+  .news_media_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1vh 60vh 5vh 8vh;
+    gap: 6%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    
+  }
+
+  .news-media-card-1 {
+    color: black;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+        animation: slideIn 1s forwards;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40vh;
+        max-height: 75vh;
+        box-shadow: 0 1px 3px #afafaf;
+        background-position: right;
+        height: 28vh;
+        overflow: hidden;
+  }
+
+  .news-media-button {
+    text-decoration: none;
+    height: 28vh;
+    
+  }
+
+  .news-media-text {
+    padding: 10px 25px;
+    background: white;
+    height: 50%;
+
+  }
+  .news-media-button {
+    text-decoration: none;
+    transition-duration: 0.3s;
+    /* Adjust this value to slow down or speed up the animation */
+    transition-timing-function: ease-in-out;
+  }
+
+  .news-media-button:hover {
+    box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    /* Adjust this value to slow down or speed up the animation */
+    transition-timing-function: ease-in-out;
+  }
+
 }
 
 
@@ -5174,7 +5260,6 @@ body {
     position: relative;
     display: flex;
     height: 72vh;
-    overflow-y: auto;
     flex-direction: column;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -6685,5 +6770,61 @@ body {
     max-width: 100%
   }
 
+  .recursos-card-list {
+    margin-bottom: 10vh;
+  }
 
+  .news_media_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5vh 60vh 5vh 10vh;
+    gap: 6%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .news-media-card-1 {
+    color: black;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+        animation: slideIn 1s forwards;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40vh;
+        max-height: 75vh;
+        box-shadow: 0 1px 3px #afafaf;
+        background-position: right;
+        height: 28vh;
+        overflow: hidden;
+  }
+
+  .news-media-button {
+    text-decoration: none;
+    height: 28vh;
+    
+  }
+
+  .news-media-text {
+    padding: 10px 25px;
+    background: white;
+    height: 50%;
+
+  }
+  .news-media-button {
+    text-decoration: none;
+    transition-duration: 0.3s;
+    /* Adjust this value to slow down or speed up the animation */
+    transition-timing-function: ease-in-out;
+  }
+
+  .news-media-button:hover {
+    box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    /* Adjust this value to slow down or speed up the animation */
+    transition-timing-function: ease-in-out;
+  }
 }
