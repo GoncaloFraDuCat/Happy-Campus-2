@@ -490,6 +490,7 @@ body {
     line-height: 1.5;
     box-shadow: 0 1px 3px #afafaf;
     max-height: 37vh;
+    border-radius: 15px;
   }
 
   .atividades-card-1 li {
@@ -509,8 +510,8 @@ body {
 
   .atividades-card-1 img {
     max-width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     height: 20vh;
   }
 
@@ -2595,7 +2596,9 @@ body {
     list-style-type: none;
     line-height: 1.5;
     box-shadow: 0 1px 3px #afafaf;
-    max-height: 42vh;
+    max-height: 44vh;
+    border-radius: 15px;
+
   }
 
   .atividades-card-1 li {
@@ -2615,8 +2618,8 @@ body {
 
   .atividades-card-1 img {
     max-width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
   }
 
   .atividades-card-1 p {
@@ -2785,8 +2788,8 @@ body {
     border-radius: 5px;
     flex-direction: column;
     scroll-snap-align: start;
-    width: 27vh;
-    height: 27vh;
+    width: 29vh;
+    height: 31vh;
     box-sizing: border-box;
     box-shadow: 0 1px 3px #afafaf;
     background-color: white;
@@ -4471,6 +4474,32 @@ body {
     transition-timing-function: ease-in-out;
   }
 
+
+  .video-1-thumb {
+    background-image: url(images/consicenc_stress_thumb.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #71dc09;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    
+  }
+
+  .video-2-thumb{
+    background-image: url(images/cheque_psicologo_thumb.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #71dc09;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    
+  }
 }
 
 
@@ -4976,6 +5005,8 @@ body {
     line-height: 1.5;
     box-shadow: 0 1px 3px #afafaf;
     max-height: 42vh;
+    border-radius: 15px;
+
   }
 
   .atividades-card-1 li {
@@ -4995,8 +5026,8 @@ body {
 
   .atividades-card-1 img {
     max-width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
   }
 
   .atividades-card-1 p {
@@ -6132,12 +6163,10 @@ body {
 
 
   .noticia-main-img {
-
     /* width: 200px; */
     text-align: center;
     object-fit: contain;
-
-    max-width: 90%;
+    max-width: 93%;
   }
 
   .noticia-main-text {
@@ -6827,4 +6856,30 @@ body {
     /* Adjust this value to slow down or speed up the animation */
     transition-timing-function: ease-in-out;
   }
+
+  .video-1-thumb {
+    background-image: url(images/consicenc_stress_thumb.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #71dc09;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    
+  }
+
+  .video-2-thumb{
+    background-image: url(images/cheque_psicologo_thumb.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #71dc09;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+  }
 }
+
