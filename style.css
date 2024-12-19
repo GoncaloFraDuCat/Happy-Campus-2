@@ -4068,7 +4068,7 @@ body {
     border-radius: 5px;
     border: none;
     width: 25vh;
-
+    text-align: center;
   }
 
   .inscricoes-div {
@@ -6170,8 +6170,8 @@ body {
 
   .noticia-main-text {
 
-    padding-right: 4%;
-    padding-left: 4%;
+    padding-right: 6%;
+    padding-left: 6%;
     line-height: 1.7;
   }
 
@@ -6480,6 +6480,7 @@ body {
     border-radius: 5px;
     border: none;
     width: 25vh;
+    text-align: center;
 
   }
 
