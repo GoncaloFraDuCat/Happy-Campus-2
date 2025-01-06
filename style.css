@@ -2953,6 +2953,7 @@ body {
     margin: auto;
     font-size: xx-large;
     padding-top: 3vh;
+
   }
 
   .noticia-date {
@@ -3792,6 +3793,7 @@ body {
     align-content: center;
     align-items: center;
     gap: 2%;
+    justify-content: space-between;
   }
 
   .noticia-main-img2 {
@@ -6204,6 +6206,7 @@ body {
     align-content: center;
     align-items: center;
     gap: 2%;
+    justify-content: space-between;
   }
 
   .noticia-main-img2 {
