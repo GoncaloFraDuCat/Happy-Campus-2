@@ -754,7 +754,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h5>© 2024 ISEC Lisboa. All rights reserved.</h5>
+          <h5>© <span id="currentYear"></span> ISEC Lisboa. All rights reserved.</h5>
           <p>Morada: Alameda das Linhas de Torres 179, 1750-142 Lisboa</p>
           <p>Email: projeto@happycampus.pt</p>
           <p>Contacto: +351 217 541 310</p>
@@ -1035,6 +1035,12 @@
 
     });
   </script>
+
+<script>
+  // JavaScript to get the current year
+  const currentYear = new Date().getFullYear();
+  document.getElementById('currentYear').textContent = currentYear;
+</script>
 
   <script></script>
 
