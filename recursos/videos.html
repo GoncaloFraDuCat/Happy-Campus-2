@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <script src="../js/head.js"></script>
+</head>
+
+<script src="../js/navbar.js"></script>
+
+
+<body>
+
+<h1 style="margin-left: 5%; margin-top: 3%;">Videos</h1>
+
+<div class="recursos-card-list">
+  <!-- First Video Card -->
+  <div class="recursos-card">
+    <div class="video-1-thumb">
+      <p>.</p>      
+    </div>
+  
+    <div style="margin: 2vh;">
+      <h3 class="recursos-title">
+        Consciencialização do Stress - 5 Dicas
+      </h3>
+      <p class="recursos-text">
+        O projeto Happy Campus assinalou o dia da Consciencialização do Stress através de um vídeo com dicas 
+        sobre a promoção do bem-estar e gestão do stress no dia-a-dia proporcionando à nossa comunidade uma vida 
+        mais equilibrada o que se revela essencial para o sucesso académico e profissional.
+      </p>
+      <button class="open-modal" data-modal="videoModal1">Assistir</button>
+  
+      <!-- Modal for local video -->
+      <div id="videoModal1" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+  
+          <!-- Video player -->
+          <video width="560" height="315" controls>
+            <source src="/videos/happy_campus.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Video Card -->
+  <div class="recursos-card">
+    <div class="video-2-thumb">
+      <p>.</p>      
+    </div>
+  
+    <div style="margin: 2vh;">
+      <h3 class="recursos-title">
+        Cheque-Psicólogo - Quem tem direito? Como pedir?
+      </h3>
+      <p class="recursos-text">
+        O Cheque-Psicólogo é uma iniciativa do governo português que visa facilitar 
+        o acesso a cuidados de saúde para os estudantes do ensino superior. Com este vídeo, 
+        as nossas Psicólogas Dra. Margarida Honório e Dra. Joana Ribeiro apresentam o cheque 
+        à nossa comunidade académica!
+      </p>
+      <button class="open-modal" data-modal="videoModal2">Assistir</button>
+  
+      <!-- Modal for local video -->
+      <div id="videoModal2" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+  
+          <!-- Video player -->
+          <video width="560" height="315" controls>
+            <source src="/videos/cheque_psicologo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+<script>
+  // When the document is ready, initialize modal functionality
+  document.addEventListener("DOMContentLoaded", function() {
+    var modalButtons = document.querySelectorAll('.open-modal'); // Select all modal buttons
+    
+    modalButtons.forEach(function(button) {
+      // Add event listener for each modal button
+      button.addEventListener('click', function() {
+        var modalId = button.getAttribute('data-modal'); // Get the modal ID from data attribute
+        var modal = document.getElementById(modalId); // Get the modal element
+        modal.style.display = 'block'; // Show the modal
+      });
+    });
+
+    // Close the modal when the "close" button is clicked
+    var closeButtons = document.querySelectorAll('.close');
+    closeButtons.forEach(function(closeButton) {
+      closeButton.addEventListener('click', function() {
+        var modal = closeButton.closest('.modal'); // Find the closest modal to the close button
+        modal.style.display = 'none'; // Hide the modal
+      });
+    });
+  });
+</script>
+
+</html>

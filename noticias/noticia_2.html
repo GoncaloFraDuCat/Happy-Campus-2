@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <script src="../js/head.js"></script>
+</head>
+
+<script src="../js/navbar.js"></script>
+
+
+<body>
+
+  <div class="main-noticia-card">
+    <div class="noticia-main-img2">
+      <img src="../images/webinar_img.jpg" alt="Noticia 2" class="noticia-main-img">
+    </div>
+    <div class="noticia-main-text">
+      <div class="noticia-title-and-date">
+        <p class="noticia-main-p"> Webinar | Saúde Mental e Bem-estar no Campus Académico do Lumiar - Desafios e
+          Oportunidades
+        </p>
+        <div class="noticia-main-date"> 29 MAI </div>
+      </div>
+      <p>
+        O início do projeto Happy Campus – I Feel Good Here ficou marcado pelo webinar Saúde Mental e Bem-estar no
+        Campus
+        Académico do Lumiar – Desafios e Oportunidades com o objetivo de promover a saúde mental entre toda a comunidade
+        académica do campus. O webinar, que decorreu no dia 29 de maio, contou com a presença do Professor Doutor Marco
+        Ferreira, coordenador científico do projeto e da Doutora Ana Peixinho, médica psiquiatra que, numa conversa
+        informal que
+        reuniu meia centena de participantes, procuraram desmistificar o tema da saúde mental abordando os principais
+        fatores
+        que despoletam a doença mental.</p>
+      <p>
+        Enfatizando o papel da escola na vida das crianças enquanto agente educador, esta pode, igualmente, atuar na
+        promoção da
+        saúde mental “A doença mental previne-se atuando precocemente na promoção da saúde mental.”, reforça a Doutora
+        Ana
+        Peixinho.
+      </p>
+      <p>Pode assistir ao webinar completo
+        <button class="open-modal"> AQUI. </button>
+      </p>
+
+      <a href="index.html#noticias" class="voltar-noticias">
+        <div>
+          <img src="../images/voltar-bot.png" alt="Voltar" class="voltar-noticias-img">
+
+        </div>
+      </a>
+
+      <div id="videoModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/_iyeqkqsVlw" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+
+        </div>
+      </div>
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById('videoModal');
+
+      // Get the button that opens the modal
+      var btn = document.querySelector('.open-modal');
+
+      // Get the <span> element that closes the modal
+      var span = document.querySelector('.close');
+
+      // When the user clicks on the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = 'block';
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = 'none';
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = 'none';
+        }
+      }
+
+    </script>
+  </div>
