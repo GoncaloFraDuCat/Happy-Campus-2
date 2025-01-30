@@ -6,7 +6,7 @@ document.write(`
     <ul class="navbar">
       <li><a href="/index.html#home">Home</a></li>
       <li><a href="/index.html#sobre">Sobre</a></li>
-      <li><a href="/index.html#/atividades">Atividades</a></li>
+      <li><a href="/index.html#atividades">Atividades</a></li>
       <li><a href="/index.html#servicos">Serviços</a></li>
       <li><a href="/index.html#noticias">Notícias</a></li>
       <li><a href="#sobre">Recursos</a>
