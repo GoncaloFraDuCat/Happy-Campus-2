@@ -7,8 +7,7 @@
   <script src="../js/head.js"></script>
 </head>
 
-<script src="../js/navbar.js"></script>
-
+<div id="navbar-container"></div>
 
 <body>
 
@@ -413,6 +412,19 @@
     <h2 class="noticias-title"> Notícias </h2>
     <div class='noticias'>
       <div class='noticias-cards'>
+
+        <a href="/noticias/noticia_20.html" class="news-button" role="button">
+          <div class='noticias-card-1'>
+            <img src="../images/noticia_20.jpg" alt="Psicologia">
+            <div class="text">
+              <p class="noticia-date"> 30/01/25 </p>
+              <p class="equipa-name"> Ação de Sensibilização Promove Inclusão de Estudantes com Necessidades Específicas no ISEC Lisboa
+                <p class="noticia-subtext">
+                  No dia 22 de janeiro, o ISEC Lisboa realizou uma ação de...
+                </p>
+              </div>
+          </div>
+        </a>
 
         <a href="/noticias/noticia_19.html" class="news-button" role="button">
           <div class='noticias-card-1'>
@@ -1034,6 +1046,17 @@
   document.getElementById('currentYear').textContent = currentYear;
 </script>
 
-  <script></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const navbar = document.getElementById('navbar');
+
+    // Add event listener to toggle the menu on click
+    hamburgerMenu.addEventListener('click', () => {
+      navbar.classList.toggle('open'); // Toggle the 'open' class to show/hide navbar
+    });
+  });
+</script>
+<script src="../js/navbar.js"></script>
 
 </body>

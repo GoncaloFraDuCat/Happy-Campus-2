@@ -309,3 +309,5 @@ window.addEventListener("scroll", handleScroll);
 
 // Initial check in case the page is reloaded with a hash or the user navigates back
 handleScroll();
+
+
