@@ -3180,6 +3180,7 @@ body {
     margin-right: 25%;
     margin-bottom: 20px;
     box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
+    border-radius: 10px;
   }
 
   .opto-card-1 {
@@ -3232,6 +3233,8 @@ body {
     min-width: 249px;
     min-height: 249px;
     object-fit: cover;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
   }
 
   .gap-image {
@@ -3728,6 +3731,7 @@ body {
     line-height: 1.5;
     height: 24vh;
     width: 160vh;
+    border-radius: 10px;
   }
 
   .recursos-text {
@@ -3751,7 +3755,10 @@ body {
     justify-content: center;
     width: 30%;
     height: 30vh;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
   }
+
   .recursos-img-2 {
     background-image: url(images/flyer-metodo-estudo-img.jpg);
     background-size: contain;
@@ -3777,6 +3784,8 @@ body {
     justify-content: center;
     width: 50%;
     height: 30vh;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
   }
 
 
@@ -4627,6 +4636,8 @@ body {
     align-items: center;
     justify-content: center;
     width: 41%;
+    border-top-left-radius: 10px; 
+border-bottom-left-radius: 10px;
     
   }
 
@@ -4640,6 +4651,8 @@ body {
     align-items: center;
     justify-content: center;
     width: 39%;
+    border-top-left-radius: 10px; 
+border-bottom-left-radius: 10px;
   }
 }
 
@@ -5599,6 +5612,7 @@ body {
     margin-right: 25%;
     margin-bottom: 20px;
     box-shadow: 6px 6px 21px -6px rgba(168, 168, 168, 1);
+    border-radius: 10px;
   }
 
   .opto-card-1 {
@@ -5623,7 +5637,7 @@ body {
     margin-right: 25%;
     margin-bottom: 20px;
     line-height: 1.5;
-
+    
 
   }
 
@@ -5651,6 +5665,8 @@ body {
     min-width: 249px;
     min-height: 249px;
     object-fit: cover;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
   }
 
   .gap-image {
@@ -6148,6 +6164,7 @@ body {
     line-height: 1.5;
     height: 24vh;
     width: 160vh;
+    border-radius: 10px;
   }
 
   .recursos-text {
@@ -6170,6 +6187,8 @@ body {
     justify-content: center;
     width: 24%;
     height: 100%;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
   }
   .recursos-img-2 {
     background-image: url(images/flyer-metodo-estudo-img.jpg);
@@ -6183,6 +6202,8 @@ body {
     justify-content: center;
     width: 24%;
     height: 100%;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
   }
 
   .webinar-img-1 {
@@ -6197,6 +6218,8 @@ body {
     width: 40%;
     height: 25vh;
     max-height: 100%;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
   }
 
 
@@ -7017,6 +7040,8 @@ body {
     align-items: center;
     justify-content: center;
     width: 41%;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
     
   }
 
@@ -7030,6 +7055,8 @@ body {
     align-items: center;
     justify-content: center;
     width: 39%;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
   }
 }
 
