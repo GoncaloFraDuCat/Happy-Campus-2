@@ -1486,6 +1486,9 @@ body {
     margin-bottom: 20px;
     line-height: 1.5;
     /* height: 24vh; */
+    border-radius: 10px;
+    padding: 3vh;
+    box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, 0.75);
   }
 
   .recursos-text {
@@ -1506,6 +1509,8 @@ body {
     justify-content: center;
     width: 63%;
     height: 24vh;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
   .recursos-img-2 {
     background-image: url(images/flyer-metodo-estudo-img.jpg);
