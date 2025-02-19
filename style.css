@@ -839,7 +839,7 @@ body {
     border-radius: 20px;
     line-height: 1.5;
     margin: 0;
-    padding: 5px;
+    padding: 3px;
     font-size: 0.62em;
   }
 
@@ -1487,7 +1487,6 @@ body {
     line-height: 1.5;
     /* height: 24vh; */
     border-radius: 10px;
-    padding: 3vh;
     box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, 0.75);
   }
 
@@ -1495,22 +1494,28 @@ body {
     padding-right: 3vh;
   }
 
-  .recursos-text-box {
+  .webinar-text-box {
     width: 100%;
+  }
+
+  .webinar-text-box {
+    width: 100%;
+    padding: 5%;
   }
 
   .recursos-img-1 {
     background-image: url(images/250_flyer_digital_mockup_imagem.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-color: #71dc09;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 63%;
+    width: 100%;
     height: 24vh;
     border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: center;
   }
   .recursos-img-2 {
     background-image: url(images/flyer-metodo-estudo-img.jpg);
@@ -1532,7 +1537,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 95%;
+        width: 100%;
         height: 34vh;
   }
 
@@ -2183,7 +2188,6 @@ body {
   }
 
   
-
   .videos-h1 {
     padding-left: 8%; 
     margin-top: 8%
@@ -2191,9 +2195,13 @@ body {
 
   .news_media_cards {
     display: grid;
-    grid-template-columns: 1fr; /* One card per row */
+    grid-template-columns: 1fr;
     margin-bottom: 5vh;
-    height: auto; /* Dynamic height */
+    height: auto;
+    margin: 5vh;
+    box-shadow: 4px 1px 11px 1px rgba(0, 0, 0, 0.17);
+    border-radius: 5px;
+    padding: 3vh;
   }
 
   .news_media_cards img {
@@ -3738,7 +3746,7 @@ body {
     padding-right: 3vh;
   }
 
-  .recursos-text-box {
+  .webinar-text-box {
     width: 100%;
 
   }
@@ -3783,7 +3791,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 50%;
-    height: 30vh;
+    height: 34vh;
     border-top-left-radius: 10px; 
     border-bottom-left-radius: 10px;
   }
@@ -6171,7 +6179,7 @@ border-bottom-left-radius: 10px;
     padding-right: 3vh;
   }
 
-  .recursos-text-box {
+  .webinar-text-box {
     width: 100%;
   }
 
@@ -6216,7 +6224,7 @@ border-bottom-left-radius: 10px;
     align-items: center;
     justify-content: center;
     width: 40%;
-    height: 25vh;
+    height: 34vh;
     max-height: 100%;
     border-top-left-radius: 10px; 
     border-bottom-left-radius: 10px;
